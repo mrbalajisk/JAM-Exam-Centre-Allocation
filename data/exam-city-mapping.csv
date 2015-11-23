@@ -1,0 +1,199 @@
+city_name,zone_id,state_id,is_online,is_offline,city_code,is_big_city,is_main_city,city_change_status
+Agra ,5,UP,t,f,2,f,t,t
+Ahmedabad ,2,GJ,t,f,3,t,t,t
+Ahmednagar ,2,MH,t,f,4,f,t,t
+Ajmer,3,RJ,t,f,5,f,t,t
+Alappuzha ,1,KL,t,f,6,f,t,t
+Aligarh ,5,UP,t,f,7,f,t,t
+Allahabad ,5,UP,t,f,8,t,t,t
+Aluva ,1,KL,t,f,9,f,t,t
+Alwar ,3,RJ,t,f,10,f,t,t
+Ambala ,8,HR,t,f,11,f,t,t
+Amravati ,2,MH,t,f,12,f,t,t
+Amritsar ,8,PB,t,f,13,f,t,t
+Anand ,2,GJ,t,f,14,f,t,t
+Anantapur ,1,AP,t,f,15,f,t,t
+Angamaly ,7,KL,t,f,16,f,t,t
+Attingal ,1,KL,t,f,18,f,t,t
+Aurangabad ,2,MH,t,f,19,f,t,t
+Bagalkot ,1,KA,t,f,20,f,t,t
+Bahadurgarh ,3,HR,t,f,21,f,t,t
+Balasore ,6,OR,t,f,22,f,t,t
+Bangalore,1,KA,t,f,23,t,t,t
+Bapatla ,7,AP,t,f,24,f,t,t
+Bareilly ,5,UP,t,f,25,f,t,t
+Bathinda ,8,PB,t,f,26,f,t,t
+Belgaum ,1,KA,t,f,27,f,t,t
+Bellary ,1,KA,t,f,28,f,t,t
+Bhavnagar ,2,GJ,t,f,30,f,t,t
+Bhilai ,6,CG,t,f,31,f,t,t
+Bhimavaram ,6,AP,t,f,32,f,t,t
+Bhopal ,5,MP,t,f,33,t,t,t
+Bhubaneswar ,6,OR,t,f,34,t,t,t
+Bhuj ,2,GJ,t,f,35,f,t,t
+Bidar ,1,KA,t,f,36,f,t,t
+Bikaner ,3,RJ,t,f,37,f,t,t
+Chengannur ,1,KL,t,f,40,f,t,t
+Chittoor ,7,AP,t,f,43,f,t,t
+Coimbatore ,7,TN,t,f,44,t,t,t
+Cuddalore ,7,TN,t,f,45,f,t,t
+Cuttack ,6,OR,t,f,46,f,t,t
+Davengere ,1,KA,t,f,47,f,t,t
+Dehradun ,8,UK,t,f,48,t,t,t
+Delhi-NCR ,3,DL,t,f,49,t,t,t
+Dhanbad ,4,JH,t,f,50,f,t,t
+Dindigul ,7,TN,t,f,51,f,t,t
+Eluru ,6,AP,t,f,53,f,t,t
+Ernakulam ,7,KL,t,f,54,t,t,t
+Erode ,7,TN,t,f,55,f,t,t
+Faridabad ,3,HR,t,f,56,t,t,t
+Gandhinagar ,2,GJ,t,f,57,f,t,t
+Gangtok ,4,SM,t,f,58,f,t,t
+Ghaziabad ,8,UP,t,f,59,t,t,t
+Goa ,2,GA,t,f,60,f,t,t
+Gudur ,7,AP,t,f,61,f,t,t
+Gulbarga ,1,KA,t,f,62,f,t,t
+Guntur ,7,AP,t,f,63,f,t,t
+Gurgaon ,3,HR,t,f,64,f,t,t
+Guwahati ,4,AS,t,f,65,f,t,t
+Gwalior ,5,MP,t,f,66,f,t,t
+Haldwani-Bhimtal ,8,UK,t,f,67,f,t,t
+Hassan ,1,KA,t,f,69,f,t,t
+Hisar-Rohtak,3,HR,t,f,70,f,t,t
+Hooghly,6,WB,t,f,71,f,t,t
+Hubli ,1,KA,t,f,72,f,t,t
+Idukki ,1,KL,t,f,74,f,t,t
+Imphal ,4,MN,t,f,75,f,t,t
+Indore ,3,MP,t,f,76,t,t,t
+Jabalpur ,5,MP,t,f,77,f,t,t
+Jaipur ,3,RJ,t,f,78,t,t,t
+Jalandhar-Phagwara ,8,PB,t,f,79,t,t,t
+Jalgaon ,2,MH,t,f,80,f,t,t
+Jammu ,3,JK,t,f,81,f,t,t
+Jamshedpur ,6,JH,t,f,82,f,t,t
+Jodhpur ,3,RJ,t,f,83,f,t,t
+Jorhat ,4,AS,t,f,84,f,t,t
+Kadapa ,7,AP,t,f,85,f,t,t
+Kakinada ,6,AP,t,f,86,f,t,t
+Kalyani ,4,WB,t,f,87,f,t,t
+Kanjirappally ,1,KL,t,f,88,f,t,t
+Kannur ,1,KL,t,f,89,f,t,t
+Kanpur ,5,UP,t,f,90,t,t,t
+Kanyakumari ,7,TN,t,f,91,f,t,t
+Karimnagar ,7,TS,t,f,92,f,t,t
+Karnal ,3,HR,t,f,93,f,t,t
+Karur ,7,TN,t,f,94,f,t,t
+Kasaragod ,1,KL,t,f,95,f,t,t
+Khammam ,7,TS,t,f,96,f,t,t
+Kharagpur ,6,WB,t,f,97,f,t,t
+Kolar ,1,KA,t,f,98,f,t,t
+Kolhapur ,2,MH,t,f,99,f,t,t
+Kolkata ,6,WB,t,f,100,t,t,t
+Kollam ,1,KL,t,f,101,f,t,t
+Kota ,3,RJ,t,f,102,f,t,t
+Kothamangalam ,1,KL,t,f,103,f,t,t
+Kottayam ,1,KL,t,f,104,f,t,t
+Kozhikode ,1,KL,t,f,105,f,t,t
+Kurnool ,1,AP,t,f,106,f,t,t
+Kurukshetra ,8,HR,t,f,107,f,t,t
+Lucknow ,5,UP,t,f,109,t,t,t
+Ludhiana-Moga ,8,PB,t,f,110,f,t,t
+Madurai ,7,TN,t,f,111,f,t,t
+Malappuram ,1,KL,t,f,113,f,t,t
+Mangalore ,1,KA,t,f,114,t,t,t
+Manipal ,1,KA,t,f,115,f,t,t
+Mathura ,3,UP,t,f,116,f,t,t
+Meerut ,8,UP,t,f,117,t,t,t
+Moradabad ,8,UP,t,f,118,f,t,t
+Mumbai ,2,MH,t,f,119,t,t,t
+Muvattupuzha ,1,KL,t,f,120,f,t,t
+Mysore ,1,KA,t,f,121,f,t,t
+Nagercoil ,7,TN,t,f,122,f,t,t
+Nagpur ,2,MH,t,f,123,t,t,t
+Nalgonda ,7,TS,t,f,124,f,t,t
+Namakkal ,7,TN,t,f,125,f,t,t
+Nanded ,2,MH,t,f,126,f,t,t
+Nashik ,2,MH,t,f,127,f,t,t
+Nedumangad ,1,KL,t,f,129,f,t,t
+Nellore ,7,AP,t,f,130,f,t,t
+Noida ,8,UP,t,f,132,f,t,t
+Ongole ,7,AP,t,f,133,f,t,t
+Pala ,1,KL,t,f,134,f,t,t
+Palakkad ,1,KL,t,f,135,f,t,t
+Palwal ,3,HR,t,f,136,f,t,t
+Panchkula,8,HR,t,f,137,f,t,t
+Panipat ,8,HR,t,f,138,f,t,t
+Pathankot ,8,PB,t,f,139,f,t,t
+Patiala-Sangrur ,8,PB,t,f,140,f,t,t
+Patna ,4,BR,t,f,141,f,t,t
+Payyanur ,1,KL,t,f,142,f,t,t
+Asansol-Durgapur,4,WB,t,f,17,f,t,t
+Chandigarh-Mohali-FatehgarhSahib,8,PB,t,f,39,f,t,t
+Chennai,7,TN,t,f,41,f,t,t
+Hamirpur-Una,8,HP,t,f,68,f,t,t
+Mehsana ,2,GJ,t,f,112,f,t,t
+New Delhi ,3,DL,t,f,131,t,t,t
+Agartala,4,TA,t,f,1,f,t,t
+Hyderabad,2,TS,t,f,73,t,t,t
+Bilaspur,6,CG,t,f,38,f,t,t
+Navi Mumbai,2,MH,t,f,128,f,t,t
+Puducherry(Pondicherry) ,7,PY,t,f,144,f,t,t
+Punalur ,1,KL,t,f,145,f,t,t
+Pune ,2,MH,t,f,146,f,t,t
+Raipur ,6,CG,t,f,147,f,t,t
+Rajahmundry ,6,AP,t,f,148,f,t,t
+Rajkot ,2,GJ,t,f,149,f,t,t
+Ranchi ,6,JH,t,f,150,f,t,t
+Ratnagiri ,2,MH,t,f,151,f,t,t
+Roorkee-Muzaffarnagar ,8,UK,t,f,152,f,t,t
+Rourkela ,6,OR,t,f,153,f,t,t
+Saharanpur,8,UP,t,f,154,f,t,t
+Salem ,7,TN,t,f,155,f,t,t
+Sambalpur ,6,OR,t,f,156,f,t,t
+Sangli ,2,MH,t,f,157,f,t,t
+Satara ,2,MH,t,f,158,f,t,t
+Secunderabad ,2,TS,t,f,159,f,t,t
+Shillong ,4,ML,t,f,160,f,t,t
+Shimoga ,1,KA,t,f,161,f,t,t
+Sikar ,3,RJ,t,f,162,f,t,t
+Silchar ,4,AS,t,f,163,f,t,t
+Siliguri ,4,WB,t,f,164,f,t,t
+Sirmaur ,8,HP,t,f,165,f,t,t
+Solan-Shimla,8,HP,t,f,166,f,t,t
+Solapur ,2,MH,t,f,167,f,t,t
+Sonepat ,8,HR,t,f,168,f,t,t
+Surat ,2,GJ,t,f,169,f,t,t
+Tadepalligudem,6,AP,t,f,170,f,t,t
+Tezpur ,4,AS,t,f,171,f,t,t
+Thane ,2,MH,t,f,172,f,t,t
+Thanjavur ,7,TN,t,f,173,f,t,t
+Thiruchengode,7,TN,t,f,174,f,t,t
+Thiruvananthapuram ,7,KL,t,f,175,t,t,t
+Thiruvannamalai,7,TN,t,f,176,f,t,t
+Thrissur ,1,KL,t,f,177,f,t,t
+Tiruchirapalli ,7,TN,t,f,178,f,t,t
+Tirunelveli ,7,TN,t,f,179,f,t,t
+Tirupati ,7,AP,t,f,180,f,t,t
+Tumkur ,1,KA,t,f,181,f,t,t
+Tuticorin ,7,TN,t,f,182,f,t,t
+Udaipur-Chittorgarh ,3,RJ,t,f,183,f,t,t
+Ujjain ,3,MP,t,f,184,f,t,t
+Vadakara ,1,KL,t,f,185,f,t,t
+Vadodara ,2,GJ,t,f,186,f,t,t
+Varanasi ,5,UP,t,f,187,f,t,t
+Vellore ,7,TN,t,f,188,f,t,t
+Vijayawada ,6,AP,t,f,189,t,t,t
+Villupuram,7,TN,t,f,190,f,t,t
+Virudhunagar ,7,TN,t,f,191,f,t,t
+Visakhapatnam ,6,AP,t,f,192,t,t,t
+Warangal ,7,TS,t,f,193,f,t,t
+Yamunanagar ,8,HR,t,f,194,f,t,t
+Coimbatore,1,TN,t,f,195,t,f,t
+Ernakulam,1,KL,t,f,196,t,f,t
+Thiruvananthapuram,1,KL,t,f,198,t,f,t
+Delhi-NCR,4,DL,t,f,200,t,f,t
+Kolkata,4,WB,t,f,199,t,f,t
+Vizianagaram,6,AP,t,f,201,f,t,t
+Hyderabad,1,TS,t,f,197,t,f,t
+Berhampur,6,OR,t,f,29,f,t,t
+Port Blair,1,AN,t,f,143,f,t,t

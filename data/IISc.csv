@@ -1,0 +1,91 @@
+ZONE ID,IIT ZONE,CITY CODE,CENTER CODE,CENTER NAME,ADDRESS 1,ADDRESS 2,ADDRESS 3,PIN CODE,CITY,STATE,SESS1,SESS2,SESS3,SESS4,SESS5,SESS6,SESS7,SESS8,PWD FRIENDLY
+1,IISC BANGALORE,143,1001,Dr.B.R.Ambedkar Institute of Technology,Old PaharGaon,Port Blair,Andaman & Nicobar Islands,744103,Port Blair,Andaman and Nicobar,81,81,81,81,81,81,81,81,YES
+1,IISC BANGALORE,15,1002,"Gates Institute of Technology,Gooty",NH-7,Gooty-Anantapuram Village,,515401,Anantapur,Andhra Pradesh,216,216,216,216,216,216,216,216,NO
+1,IISC BANGALORE,15,1003,Shri Sai Institute of Engineering and Technology,N.H.7,Podaralla Village,Bukkarayasamudram Mandal ,515001,Anantapur,Andhra Pradesh,100,100,100,100,100,100,100,100,YES
+1,IISC BANGALORE,15,1004,Sri Sai Baba National SSBN PG and Degree College,Opposite ZPP Office,Hospital Road,,515001,Anantapur,Andhra Pradesh,100,100,100,100,100,100,100,100,NO
+1,IISC BANGALORE,15,1005,Srinivasa Ramanujan Institute of Technology,Rotarypuram Village,B K Samudram Mandal,,515701,Anantapur,Andhra Pradesh,250,250,250,250,250,250,250,250,YES
+1,IISC BANGALORE,106,1006,Dr.K.V.Subba Reddy College of Engineering for Women,Opp Dupadu Railway Station,NH7,Lakshmipuram post,518218,Kurnool,Andhra Pradesh,150,150,150,150,150,150,150,150,YES
+1,IISC BANGALORE,106,1007,Dr.K.V.Subba Reddy Institute of Technology,Opp Dupadu Railway Station,NH7,Lakshmipuram post,518218,Kurnool,Andhra Pradesh,150,150,150,150,150,150,150,150,NO
+1,IISC BANGALORE,106,1008,G.Pullaiah College of Engineering and Technology,Near Venkayapalle,Pasupula Village,Nandikotkur Road,518002,Kurnool,Andhra Pradesh,300,300,300,300,300,300,300,300,YES
+1,IISC BANGALORE,106,1009,G.Pulla Reddy Engineering College ,G.Pulla Reddy Nagar," Nandyal Road, Kurnool,Andhra Pradesh",Kurnool,518007,Kurnool,Andhra Pradesh,150,150,150,150,150,150,150,150,YES
+1,IISC BANGALORE,20,1010,Basaveshwar Engineering College,vidyagiri,Bagalkot,,587102,Bagalkot,Karnataka,232,232,232,232,232,232,232,232,NO
+1,IISC BANGALORE,27,1011,K. L. E. Society College of Engineering & Technology,Udyambag,Belgaum,,590008,Belgaum,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,27,1012,Karnataka Law Societys Gogte Institute of Technology,"Jnana Ganga,Khanapur Road",Udyambag,Belgaum,590008,Belgaum,Karnataka,300,300,300,300,300,300,300,300,YES
+1,IISC BANGALORE,28,1013,Ballari Institute of Technology & Management,"Jnana Gangotri Campus , No.873/2","BellaryHospet Road, Near Allipur",Bellary,583104,Bellary,Karnataka,300,300,300,300,300,300,300,300,NO
+1,IISC BANGALORE,23,1014,Acharya Institute of Technology,Acharya Dr. Sarvepalli Radhakrishnan Road,"Soldevanahalli,Hesaraghatta Main Road",Bengaluru,560107,Bengaluru,Karnataka,400,400,400,400,400,400,400,400,NO
+1,IISC BANGALORE,23,1015,ACS College of Engineering,"#207, Kambipura","Mysore Road,Kengeri hobli",Bengaluru,560074,Bengaluru,Karnataka,200,200,200,200,200,200,200,200,NO
+1,IISC BANGALORE,23,1016,Cambridge Institute Of Technology,"T C Palya, Basavanapura Main Road","gayathri layout, Krishnarajapuram",Bengaluru,560036,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,YES
+1,IISC BANGALORE,23,1017,CMR Institute of Technology,"132,AECS Layout","IT Park Road,Kundalahalli Village",Bengaluru,560037,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,23,1018,Dayananda Sagar Institutions,Shavige Malleshwara Hills,Kumaraswamy Layout,Bengaluru,560078,Bengaluru,Karnataka,400,400,400,400,400,400,400,400,NO
+1,IISC BANGALORE,23,1019,Don Bosco Institute of Technology,Kumbalagodu,"Mysore Road, Bengaluru",,560074,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,23,1020,East West Institute of Technology,"No 63 ,Off Magadi Road","Anjana Nagar,BEL Layout",Vishwaneedam Post,560091,Bengaluru,Karnataka,400,400,400,400,400,400,400,400,NO
+1,IISC BANGALORE,23,1021,East West Polytechnic,"No 63,Off Magadi Road","Anjana Nagar,BEL Layout",Vishwaneedam Post,560091,Bengaluru,Karnataka,220,220,220,220,220,220,220,220,NO
+1,IISC BANGALORE,23,1022,Global Academy of Technology,"Rajarajeshwari Nagar, off Mysore Road",Ideal Homes Township,Bengaluru,560098,Bengaluru,Karnataka,220,220,220,220,220,220,220,220,YES
+1,IISC BANGALORE,23,1023,K S School of Engineering and Management,"15, Mallasandra",OffKanakapura Road,Bengaluru,560062,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,23,1024,K. S Institute of Technology,"No14, Raghuvanahallli",Kanakapura Main Road,Bengaluru,560062,Bengaluru,Karnataka,300,300,300,300,300,300,300,300,NO
+1,IISC BANGALORE,23,1025,M S Ramaiah Institute of Technology,Vidya Soudha, M.S.R.I.T Post,Bengaluru,560054,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,23,1026,Rajarajeswari College of Engineering,"14, Ramohalli cross","Mysore Road, Kumbalgodu",Bengaluru,560074,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,YES
+1,IISC BANGALORE,23,1027,Reva Institute of Technology and Management,"#226  and  227, Kattigenahalli","Jala Hobli, Bagalur Cross",Yelahanka,560064,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,23,1028,Sri Krishna Institute of Technology,"No. 29, Hesarghatta Main Road","Chimney Hills,Chikkabanvara",Bengaluru,560090,Bengaluru,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,23,1029,Sri Venkateshwara College of Engineering,"NH 7, Vidyanagar",Bengaluru International Airport Road,Bengaluru,562157,Bengaluru,Karnataka,200,200,200,200,200,200,200,200,NO
+1,IISC BANGALORE,36,1030,Guru Nanak Dev Engineering College,Mailur Road,Bidar,,585403,Bidar,Karnataka,180,180,180,180,180,180,180,180,YES
+1,IISC BANGALORE,47,1031,Bapuji Institute of Engineering & Technology,Shamanur Road,Davanagere,,577004,Davanagere,Karnataka,200,200,200,200,200,200,200,200,NO
+1,IISC BANGALORE,47,1032,GM Institute of Technology,"P. B. No. 4 , P. B. Road",Davanagere,,577006,Davanagere,Karnataka,170,170,170,170,170,170,170,170,YES
+1,IISC BANGALORE,62,1033,Appa Institute Of Engineering & Technology,S.B College Campus,Vidyanagar,Gulbarga,585103,Gulbarga,Karnataka,100,100,100,100,100,100,100,100,NO
+1,IISC BANGALORE,62,1034,P D A College of Engineering,"Alwan E Shahi area, Station road",Gulbarga,,585102,Gulbarga,Karnataka,100,100,100,100,100,100,100,100,NO
+1,IISC BANGALORE,62,1035,Bheemanna Khandre Institute of Technology,Bhalki TK," Humnabad Road,Bidar",,585328,Gulbarga,Karnataka,100,100,100,100,0,0,0,0,NO
+1,IISC BANGALORE,69,1036,Rajeev Institute of Technology,"Growth Centre,Industrial Area",Bangalore-Mangalore Bypass Road,Hassan,573201,Hassan,Karnataka,250,250,250,250,250,250,250,250,NO
+1,IISC BANGALORE,72,1037,Sri Dharmasthala Manjunatheshwara College of Engineering and Technology,Dhavalagiri,Dharwad,,580002,Hubli,Karnataka,300,300,300,300,300,300,300,300,NO
+1,IISC BANGALORE,72,1038,B V Bhoomraddi College of Engineering & Technology,Vidyanagar,Hubli,,580031,Hubli,Karnataka,0,250,250,250,250,250,0,0,YES
+1,IISC BANGALORE,72,1039,K.L.E.Institute of Technology,"Opposite Airport, Gokul",Hubli,,580030,Hubli,Karnataka,0,0,0,0,0,0,120,120,NO
+1,IISC BANGALORE,98,1040,C Byre Gowda Institute of Technology,"Thoradevanda Halli (P), Kolar to Srinivaspur Road",Kolar,,563101,Kolar,Karnataka,140,140,140,140,140,0,140,0,YES
+1,IISC BANGALORE,114,1041,Canara Engineering College,"Benjana Padavu,Bantwal Taluk",Mangalore,,574219,Mangalore,Karnataka,220,220,220,220,220,220,220,220,NO
+1,IISC BANGALORE,114,1042,Sahyadri College of Engineering and Management,"Sahyadri Campus ,NH 48,Adyar",Mangalore,,575007,Mangalore,Karnataka,280,280,280,280,280,280,280,280,YES
+1,IISC BANGALORE,114,1043,P A College of Engineering,"Nadupadav, Motepadav post","Kairangala,Near Mangalore University",Mangalore,574153,Mangalore,Karnataka,180,180,180,180,180,180,180,180,NO
+1,IISC BANGALORE,115,1044,DR. T.M.A. Pai Polytechnic,"M.I.T  Campus, Milk diary road","Eshwar Nagar, Manipal",Udupi,576104,Manipal,Karnataka,180,180,180,180,180,180,180,180,NO
+1,IISC BANGALORE,121,1045,NIE Institute of Technology,"#50(part) ,next to BEML","Koorgalli Village, Hootagalli industrial Area",Mysore,570018,Mysore,Karnataka,135,135,135,135,135,135,135,135,NO
+1,IISC BANGALORE,121,1046,Sri Jayachamarajendra College Of Engineering,Manasagangothri,Mysore,,570006,Mysore,Karnataka,130,130,130,130,130,130,130,130,NO
+1,IISC BANGALORE,121,1047,Vidya Vardhaka College Of Engineering,"P.B. No.206, Gokulam III Stage",Mysore,,570002,Mysore,Karnataka,320,320,330,333,320,320,320,320,YES
+1,IISC BANGALORE,121,1048,Vidyavardhaka Polytechnic,"P.B. No.206, Gokulam III Stage",Mysore,,570002,Mysore,Karnataka,0,0,0,0,0,0,95,0,NO
+1,IISC BANGALORE,161,1049,PES Institute of Technology and Management,"NH 206 , Sagar Road",Shimoga,,577204,Shimoga,Karnataka,250,250,250,250,250,250,250,250,YES
+1,IISC BANGALORE,181,1050,Channabasaveshwara Institute of Technology,"N.H. 206, B.H. Road","Gubbi, Tumkur",,572216,Tumkur,Karnataka,320,320,320,320,320,320,320,320,NO
+1,IISC BANGALORE,6,1051,Archana College of Engineering,Ulavukkadu,"Palamel, Nooranadu P.O",Alappuzha,690504,Alappuzha,Kerala,108,108,108,108,108,108,108,108,NO
+1,IISC BANGALORE,6,1052,Sri Vellappally Natesan College of Engineering,Kattachira,"Pallickal P O,Mavelikara",Alappuzha,690503,Alappuzha,Kerala,160,160,160,160,160,160,160,160,YES
+1,IISC BANGALORE,9,1053,De Paul Institute of Science and Technology,De Paul Nagar,Angamaly South,Ernakulam,683573,Aluva,Kerala,99,99,99,99,99,99,99,99,YES
+1,IISC BANGALORE,9,1054,Sree Narayana Guru Institute of Science and Technology,"Thekkethazham, Mannam P.O",Manjali,Ernakulam,683520,Aluva,Kerala,189,189,189,189,189,189,189,189,NO
+1,IISC BANGALORE,18,1055,Rajadhani Institute of Engineering And Technology,Neduparambu,"Nagaroor, Attingal",Thiruvananthapuram,695102,Attingal,Kerala,260,260,260,260,260,260,260,260,YES
+1,IISC BANGALORE,40,1056,Sree Buddha College of Engineering,"Pattoor P.O., Nooranad ",Padanilam,Alappuzha,690529,Chengannur,Kerala,180,180,180,180,180,180,180,180,YES
+1,IISC BANGALORE,40,1057,St. Thomas College of Engineering and Technology,Kozhuvallor P.O.,Chengannur ,Alappuzha,689521,Chengannur,Kerala,162,162,162,162,162,162,162,162,YES
+1,IISC BANGALORE,74,1058,Mar Baselios Christian College of Engineering & Technology,Pallikkunnu P.O,"Kuttikkanam, Peermade,",Idukki,685531,Idukki,Kerala,90,90,90,90,90,0,90,0,YES
+1,IISC BANGALORE,88,1059,Amal Jyothi College of Engineering,Koovappally P.O,Kanjirappally ,Kottayam,686518,Kanjirappally ,Kerala,315,315,315,315,315,315,315,0,NO
+1,IISC BANGALORE,89,1060,Government College of Engineering,Mangattuparamba,Parassinikadavu(P.O),"Kannur,Kerala",670563,Kannur,Kerala,216,216,216,216,216,216,0,0,YES
+1,IISC BANGALORE,89,1061,Vimal Jyothi Engineering College,Jyothi Nagar,Chemperi P.O,"Kannur,Kerala",670632,Kannur,Kerala,306,306,306,306,306,306,306,0,NO
+1,IISC BANGALORE,95,1062,LBS College Of Engineering,Muliyar P.O,Povval,"Kasaragod,Kerala",671542,Kasaragod,Kerala,108,108,108,108,108,108,108,108,YES
+1,IISC BANGALORE,101,1063,Baselious Mathews 2 college of Engineering,Lakeview,"Muthupilakadu, Sasthamcotta",Kollam,690520,Kollam,Kerala,171,171,171,171,171,171,171,171,NO
+1,IISC BANGALORE,101,1064,Sree Narayana Institute Of Technology,Near Ayathil," bypass road, Vadakkevila",Kollam,691010,Kollam,Kerala,101,101,101,101,101,101,101,101,YES
+1,IISC BANGALORE,101,1065,TKM Institute Of Technology,"Musaliar Hills,"," Karuvelil P.O , Ezhukone, ",Kollam,691505,Kollam,Kerala,207,207,207,207,207,207,207,207,NO
+1,IISC BANGALORE,101,1066,UKF College of Engineering & Technology,Meenambalam,"Puthamkulam Post, Parippally",Kollam,691302,Kollam,Kerala,180,180,180,180,180,180,180,180,NO
+1,IISC BANGALORE,103,1067,Mar Baselios Institute of Technology & Science,Nellimattom P O,Kothamangalam,Ernakulam,686693,Kothamangalam,Kerala,234,234,234,234,234,234,234,234,NO
+1,IISC BANGALORE,104,1068,Mangalam College of Engineering,Vettimukal P.O.,"Mangalam Hills, Ettumanoor",Kottayam,686631,Kottayam,Kerala,180,180,180,180,180,180,180,180,YES
+1,IISC BANGALORE,104,1069,Saintgits College of Engineering,Kottukulam Hills,Pathamuttom ,Kottayam,686532,Kottayam,Kerala,405,405,405,405,405,405,405,405,NO
+1,IISC BANGALORE,105,1070,AWH Engineering College,"Kuttikattor PO, ","Calicut,",Kozhikode,673008,Kozhikode,Kerala,194,194,194,194,194,194,194,194,YES
+1,IISC BANGALORE,105,1071,National institute of Technology,"NITC Campus PO ,",Kozhikode,,673601,Kozhikode,Kerala,90,90,90,90,90,90,90,90,YES
+1,IISC BANGALORE,105,1072,MEA Engineering College,"Vengoor P.O,","Perinthalmanna,",Malappuram,679325,Kozhikode,Kerala,315,315,315,315,315,315,315,315,YES
+1,IISC BANGALORE,105,1073,Farook College,Farook College Post,Kozhikode,,673632,Kozhikode,Kerala,100,0,0,100,0,0,0,0,YES
+1,IISC BANGALORE,113,1074,MES College of Engineering,"Kuttippuram, ",Thrikkanapuram Post,Malappuram,679573,Malappuram,Kerala,252,252,252,252,252,252,252,252,YES
+1,IISC BANGALORE,120,1075,Ilahia College of Engineering And Technology,Mulavoor P O,"Muvattupuzha,",Ernakulam,686673,Muvattupuzha,Kerala,225,225,225,225,225,225,225,225,NO
+1,IISC BANGALORE,129,1076,Heera College of Engineering and Technology,"Panavoor P.O,",Nedumangadu,Thiruvananthapuram,695568,Nedumangadu,Kerala,180,180,180,180,180,180,180,180,YES
+1,IISC BANGALORE,129,1077,MES Institute of Technology and Management,Chathannoor P O,Kollam,,691572,Nedumangadu,Kerala,80,80,80,0,0,0,0,0,NO
+1,IISC BANGALORE,134,1078,St.Josephs College of Engineering and Technology,Choondacherry P.O.,Palai ,Kottayam,686579,Pala ,Kerala,333,333,333,333,333,0,333,0,NO
+1,IISC BANGALORE,135,1079,Jawaharlal College Of Engineering and Technology,"Jawahar Gardens, Lakkadi,Mangalam","Ottapalam,",Palakkad,679301,Palakkad,Kerala,198,198,198,198,198,198,198,198,YES
+1,IISC BANGALORE,135,1080,Sreepathy Institute of Management and Technology,Vavannor,"Koottanad VIA,",Palakkad,679533,Palakkad,Kerala,135,135,135,135,135,135,135,135,NO
+1,IISC BANGALORE,135,1081,Palakkad Institute of Science And Technology,Attayampathy,Govindapuram P.O,"Muthalamada,Palakkad",678507,Palakkad,Kerala,100,100,100,100,100,100,0,0,YES
+1,IISC BANGALORE,142,1082,Sree Narayana Guru College of Engineering & Technology,Korom,Chalakode - P.O,"Payyanur, Kannur",670307,Payyanur,Kerala,198,198,198,198,198,198,198,0,YES
+1,IISC BANGALORE,145,1083,MarThoma Institute of Information Technology,Chadayamangalam P.O,Ayur,Kollam,691534,Punalur,Kerala,59,59,59,59,59,59,59,59,NO
+1,IISC BANGALORE,177,1084,Jyothi Engineering College,"Jyothi Hills, Panjal Road","Vettikkattiri P O,Cheruthuruthy,",Thrissur,679531,Thrissur,Kerala,180,180,180,180,180,180,180,180,YES
+1,IISC BANGALORE,177,1085,Nehru College of Engineering and Research Centre,"Nila Gardens,Pampady","Thiruvilwamala, ",Thrissur,680588,Thrissur,Kerala,180,180,180,180,180,180,180,180,YES
+1,IISC BANGALORE,177,1086,Sahrdaya College of Engineering and Technology,"P.B No 17, ",Kodakara,Thrissur,680684,Thrissur,Kerala,0,0,0,0,0,0,0,0,NO
+1,IISC BANGALORE,177,1087,Thejus Engineering College,Vellarakkad P.O ,Erumappetty,Thrissur,680584,Thrissur,Kerala,270,270,270,270,270,270,270,270,YES
+1,IISC BANGALORE,177,1088,Universal Engineering College,"Vallivattom P.O, Konathakunnu  Via","Near Mathilakam, ",Thrissur,680123,Thrissur,Kerala,0,144,144,144,144,144,0,0,YES
+1,IISC BANGALORE,177,1089,Vidya Academy of Science and Technology,"Kurumal,Thalakottukara P.O","Near Kaiparambu, ",Thrissur,680501,Thrissur,Kerala,120,120,120,120,120,120,0,0,YES
+1,IISC BANGALORE,185,1090,College of Engineering,"Mandarathur P.O., ","Vadakara,",Kozhikode,673105,Vadakara,Kerala,135,135,135,135,135,135,135,135,NO
