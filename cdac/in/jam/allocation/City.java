@@ -9,13 +9,13 @@ import java.util.LinkedHashMap;
 
 public class City{
 
-	String code;
+	String cityCode;
 	Map<String, Centre> centreMap;
 	Map<String, Session> sessionMap;
 	
 	City(String code){
 
-		this.code = code;
+		this.cityCode = code;
 		this.centreMap = new LinkedHashMap<String, Centre>();
 		this.sessionMap = new LinkedHashMap<String, Session>();
 	}
@@ -24,7 +24,7 @@ public class City{
 
 		Set<String> centres = centreMap.keySet();
 		for(String centre: centres ){
-			centreMap.get( centre ).print( zone, code );
+			centreMap.get( centre ).print( zone, cityCode );
 		}
 	}
 } 

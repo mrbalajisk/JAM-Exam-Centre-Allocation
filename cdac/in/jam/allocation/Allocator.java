@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.TreeMap;
+import java.util.Set;
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.File;
@@ -166,7 +167,7 @@ public class Allocator{
 					city = new City( cityCode );
 				}
 
-				city.centreMap.put(centerCode, new Centre( centerCode, sessions, PwDFriendly) );
+				city.centreMap.put( centerCode, new Centre( centerCode, sessions, PwDFriendly) );
 
 				/* City Session Capacity Calculation START */
 				i = 0;
@@ -178,6 +179,7 @@ public class Allocator{
 					}else{
 						session.capacity += Integer.parseInt( sessions.get(i) ) ;
 					}		
+
 					city.sessionMap.put( s+"", session );
 				}
 
@@ -235,7 +237,7 @@ public class Allocator{
 		
 		for(Applicant applicant: applicants){
 
-			if( applicant.isAllocated ){
+			if( applicant.isAllocated.get( applicant.paperCode1)  != null && applicant.isAllocated.get( applicant.paperCode1 ) != null ){
 				continue;
 			}	
 
@@ -263,6 +265,7 @@ public class Allocator{
 						paper = new Paper( applicant.paperCode1, 0 );
 					}
 					paper.applicants.add( applicant );
+					applicant.isAllocated.put( paper.paperCode, "true" );	
 					city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
 
 					
@@ -275,7 +278,7 @@ public class Allocator{
 					paper.applicants.add( applicant );
 					city.sessionMap.get( session2 ).paperMap.put( applicant.paperCode2, paper );	
 
-					applicant.isAllocated = true;	
+					applicant.isAllocated.put( paper.paperCode, "true" );	
 					
 					count++;
 					
@@ -290,8 +293,8 @@ public class Allocator{
 					}
 					paper.applicants.add( applicant );
 					city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
+					applicant.isAllocated.put( paper.paperCode, "true" );	
 
-					applicant.isAllocated = true;	
 					count++;
 			}
 			
@@ -327,29 +330,58 @@ public class Allocator{
 
 			Session session =  city.sessionMap.get( sessionId );
 
-			while( true ){
-				
+			boolean allocatioDone = false;
+
+			while( allocatioDone ){
+
+				allocatioDone = false;
+		
 				Set<String> paperCodes 	= session.paperMap.keySet();
+
 				for( String paperCode: paperCodes ){
-					 Paper paper = session.paperMap.get( paper );
-					 Set<Centre> centreCodes = city.centreMap.keySet();
+
+					 Paper paper = session.paperMap.get( paperCode );
+					 
+					 Set<String> centreCodes = city.centreMap.keySet();
+
 					 for( String centreCode: centreCodes ){
+
 						Centre centre  = city.centreMap.get( centreCode );
-						Applicant applicant = paper.applicants.get(0);
-						applicant.isAllocated = true;
-						applicant.center =  center;	
-							
+						
+						if( ( centre.sessionMap.get( session.sessionId ).capacity - centre.sessionMap.get( session.sessionId ).allocated ) > 0 ){
+
+								if( paper.applicants.size() >  0){
+
+									Applicant applicant = paper.applicants.remove(0);
+									allocatioDone = true;
+									applicant.centre =  centre;	
+									applicant.registrationId.put(paper.paperCode, generateRegistrationId( session, centre, paper ) ) ;
+									applicant.isAllocated.put( paper.paperCode, "true");
+									applicant.print();
+								}
+						}
 					 }	
 				}
 			}
 		 } 	  		
 	}
 
+	String generateRegistrationId(Session session, Centre centre, Paper paper){
+
+		String count = "000"+centre.sessionMap.get( session.sessionId ).allocated + 1;
+		count = count.substring( count.length() - 3);
+		centre.sessionMap.get( session.sessionId ).allocated++;
+		String registrationId = paper.paperCode+"16S"+session.sessionId+""+centre.centreCode+""+count;
+	return registrationId.trim();
+	}
+
 	void centreAllocation(){
-		Set<String> cityCode = cityMap.keySet();
+
+		Set<String> cityCodes = cityMap.keySet();
 		for(String cityCode: cityCodes){
 			City city = cityMap.get( cityCode );
-			allocate( city );
+			System.out.println( "Allocation for "+city.cityCode);
+			centerAllocate( city );
 		}
 	}
 
@@ -366,6 +398,7 @@ public class Allocator{
 			allocator.readCentres("./data/IISc.csv", true);
 			allocator.readConstraints("");
 			allocator.allocate();
+			allocator.centreAllocation();
 			allocator.print();
 
 		}catch(Exception e){
