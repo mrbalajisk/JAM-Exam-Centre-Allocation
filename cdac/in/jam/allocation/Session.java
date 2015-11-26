@@ -28,7 +28,7 @@ public class Session{
 	
 	void print(String zoneCode, String cityCode, String centreCode){
 		Set<String> papers = paperMap.keySet();
-		System.out.print(zoneCode+", "+cityCode+", "+centreCode+", "+sessionId+", ");
+		System.out.print(zoneCode+", "+cityCode+", "+centreCode+", "+sessionId+", "+capacity+", "+allocated);
 		for(String paper: papers){
 			paperMap.get( paper ).print();	
 		}

@@ -10,12 +10,14 @@ import java.util.LinkedHashMap;
 public class City{
 
 	String cityCode;
+	String cityName;
 	Map<String, Centre> centreMap;
 	Map<String, Session> sessionMap;
 	
-	City(String code){
+	City(String code, String cityName){
 
 		this.cityCode = code;
+		this.cityName = cityName;
 		this.centreMap = new LinkedHashMap<String, Centre>();
 		this.sessionMap = new LinkedHashMap<String, Session>();
 	}

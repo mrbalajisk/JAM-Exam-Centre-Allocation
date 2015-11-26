@@ -8,13 +8,15 @@ import java.util.TreeMap;
 public class Centre{
 
 	String centreCode;
+	String centreName;
 	boolean pwdFriendly;
 	Map<String, Session> sessionMap;
 
 
-	Centre( String centreCode, List<String>sessions, String PwDFriendly ){
+	Centre( String centreCode, String centreName, List<String>sessions, String PwDFriendly ){
+		this.centreName = centreName;
 		this.centreCode = centreCode;
-		if( PwDFriendly.equals("YES") )
+		if( PwDFriendly.equals("YES") || PwDFriendly.equals("Yes") || PwDFriendly.indexOf("Y") >= 0 || PwDFriendly.indexOf("y") >=0 )
 			pwdFriendly = true;
 
 		this.sessionMap = new TreeMap<String, Session>();
