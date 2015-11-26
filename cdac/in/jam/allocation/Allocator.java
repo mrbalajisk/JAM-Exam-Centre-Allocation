@@ -20,11 +20,15 @@ public class Allocator{
 		List<Applicant> otherApplicants;
 		List<Applicant> femaleApplicants;
 		List<Applicant> twoPaperApplicants;
-
+		List<Applicant> notAllocatedApplicants;
+		List<Applicant> allocatedApplicants;
 
 		public Allocator(){
 
 				applicants = new ArrayList<Applicant>();
+				notAllocatedApplicants = new ArrayList<Applicant>();
+				allocatedApplicants = new ArrayList<Applicant>();
+
 				PwDApplicants = new ArrayList<Applicant>();
 				femaleApplicants = new ArrayList<Applicant>();
 				otherApplicants = new ArrayList<Applicant>();
@@ -71,7 +75,7 @@ public class Allocator{
 								String[] tk = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
 								if( tk.length < 10)	
 										continue;
-								Applicant applicant = new Applicant( tk[0].trim(), tk[1].trim(), tk[2].trim(), tk[3].trim(), tk[4].trim(), tk[5].trim(), tk[6].trim(), tk[7].trim(), tk[8].trim(), tk[9].trim() );
+								Applicant applicant = new Applicant( tk[0].trim(), tk[1].trim(), tk[2].trim(), tk[3].trim(), tk[4].trim(), tk[5].trim(), tk[6].trim(), tk[7].trim(), tk[8].trim(), tk[9].trim(), tk[10].trim() );
 
 								applicants.add( applicant );	
 
@@ -239,11 +243,19 @@ public class Allocator{
 
 				for(Applicant applicant: applicants){
 
-						if( applicant.isAllocated.get( applicant.paperCode1)  != null && applicant.isAllocated.get( applicant.paperCode1 ) != null ){
+						if( applicant.paperCode1 != null && applicant.paperCode2 != null ){
+							if( applicant.isAllocated.get( applicant.paperCode1 ).equals("true")  && applicant.isAllocated.get( applicant.paperCode2).equals("true") )
+							continue;
+
+						}else if ( applicant.paperCode1 != null ) {
+
+							if( applicant.isAllocated.get( applicant.paperCode1 ).equals("true") )
 								continue;
-						}	
+
+						}
 
 						String cityCode = applicant.choices[ choiceNumber ];			
+
 						City city = cityMap.get( cityCode );
 
 						if( city == null){
@@ -271,9 +283,8 @@ public class Allocator{
 										}
 										paper.applicants.add( applicant );
 										applicant.isAllocated.put( paper.paperCode, "true" );	
+
 										city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
-
-
 										city.sessionMap.get( session2 ).allocated++;
 
 										paper = city.sessionMap.get( session2 ).paperMap.get( applicant.paperCode2 );
@@ -284,7 +295,7 @@ public class Allocator{
 										city.sessionMap.get( session2 ).paperMap.put( applicant.paperCode2, paper );	
 
 										applicant.isAllocated.put( paper.paperCode, "true" );	
-
+										applicant.allotedChoice = ( choiceNumber + 1);
 										count++;
 
 								}   				
@@ -299,7 +310,7 @@ public class Allocator{
 								paper.applicants.add( applicant );
 								city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
 								applicant.isAllocated.put( paper.paperCode, "true" );	
-
+								applicant.allotedChoice = ( choiceNumber + 1);
 								count++;
 						}
 
@@ -339,7 +350,20 @@ public class Allocator{
 
 														Applicant applicant = paper.applicants.get(0);
 
+														if( applicant.isPwD && ( !centre.pwdFriendly || centre.sessionMap.get("1").pwdCount==5 )){
+
+															paper.applicants.remove( applicant );
+															paper.applicants.add( applicant );
+															continue;
+														}
+
 														if( applicant.paperCode1 != null && applicant.paperCode2 != null ) {
+
+															if( applicant.isPwD && centre.sessionMap.get("2").pwdCount == 5 ){	
+																paper.applicants.remove( applicant );
+																paper.applicants.add( applicant );
+																continue;
+															}
 
 															if(( centre.sessionMap.get("1").capacity - centre.sessionMap.get("1").allocated ) > 0 																					&& ( centre.sessionMap.get("2").capacity - centre.sessionMap.get("2").allocated ) > 0 ){			
 
@@ -347,14 +371,15 @@ public class Allocator{
 																		allocatioDone = true;
 																		applicant.centre =  centre;	
 																		applicant.registrationId.put(paper.paperCode, generateRegistrationId( session, centre, paper,"B" ));
-																		applicant.isAllocated.put( paper.paperCode, "true");
-
 																		Session tsession =  city.sessionMap.get("2");
 																		Paper tpaper = tsession.paperMap.get( applicant.paperCode2 );
 																		tpaper.applicants.remove( applicant );
 																		applicant.registrationId.put( tpaper.paperCode, generateRegistrationId( tsession, centre, tpaper,"B" ) ) ;
-																		applicant.isAllocated.put( tpaper.paperCode, "true");
-																		applicant.print();
+																		allocatedApplicants.add( applicant );			
+																		if( applicant.isPwD ){
+																			centre.sessionMap.get("1").pwdCount++;
+																			centre.sessionMap.get("2").pwdCount++;
+																		}
 																}
 
 														}else{
@@ -367,8 +392,11 @@ public class Allocator{
 																			applicant.registrationId.put(paper.paperCode,generateRegistrationId(session,centre,paper,"F"));
 																		else	
 																			applicant.registrationId.put(paper.paperCode,generateRegistrationId(session,centre,paper,"A"));
-																		applicant.isAllocated.put( paper.paperCode, "true");
-																		applicant.print();
+																		allocatedApplicants.add( applicant );			
+
+																		if( applicant.isPwD ){
+																			centre.sessionMap.get( session.sessionId ).pwdCount++;
+																		}
 																}
 														}				
 												}
@@ -379,7 +407,7 @@ public class Allocator{
 		}
 
 		String generateRegistrationId(Session session, Centre centre, Paper paper, String sessionCode){
-				String count = "000"+centre.sessionMap.get( session.sessionId ).allocated + 1;
+				String count = "000"+( centre.sessionMap.get( session.sessionId ).allocated + 1 );
 				count = count.substring( count.length() - 3);
 				centre.sessionMap.get( session.sessionId ).allocated++;
 				String registrationId = paper.paperCode+""+centre.centreCode+""+sessionCode+""+count;
@@ -391,7 +419,7 @@ public class Allocator{
 				Set<String> cityCodes = cityMap.keySet();
 				for(String cityCode: cityCodes){
 						City city = cityMap.get( cityCode );
-						System.out.println( "Allocation for "+city.cityCode+" | "+city.cityName);
+						System.err.println( "Allocation for "+city.cityCode+" | "+city.cityName);
 						centerAllocate( city );
 				}
 		}
@@ -406,24 +434,29 @@ public class Allocator{
 								city.print( zone.zoneId );
 						}
 				}
+				for(Applicant applicant: allocatedApplicants ){
+						applicant.print();
+				}
+
+				System.out.println("------------------ Not Allocated Candidate ---------------");
+				for(Applicant applicant: applicants ){
+					if( !allocatedApplicants.contains( applicant ) ){
+							notAllocatedApplicants.add( applicant );
+							applicant.print();
+					}	
+				}
+				System.out.println("Not Allocated candidate "+notAllocatedApplicants.size());
+				System.out.println("Allocated candidate "+allocatedApplicants.size());
 		}
 
 		void allocate(){
-				/*
-				   applicants;
-				   PwDApplicants;
-				   otherApplicants;
-				   femaleApplicants;
-				   twoPaperApplicants;
-				 */
 
-				System.out.print("PwD Allocation: ");
-				allocate( PwDApplicants, 0 );
 				System.out.print("Two Paper: ");
 				allocate( twoPaperApplicants, 0 );
+				System.out.print("PwD Allocation: ");
+				allocate( PwDApplicants, 0 );
 				System.out.print("Others: ");
 				allocate( applicants, 0 );
-
 		}
 
 		public static void main(String[] args){
@@ -431,9 +464,9 @@ public class Allocator{
 				try{
 
 						Allocator allocator = new Allocator();
-						allocator.readApplicants("./data/applicant-20151123.csv", true);
+						allocator.readApplicants("./data/applicant20151126.csv", true);
 						allocator.readCentres("./data/jam-centre-data.csv", true);
-						allocator.print();
+						//allocator.print();
 						allocator.readConstraints("");
 						allocator.allocate();
 						allocator.centreAllocation();

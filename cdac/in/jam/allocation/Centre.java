@@ -12,16 +12,17 @@ public class Centre{
 	boolean pwdFriendly;
 	Map<String, Session> sessionMap;
 
-
 	Centre( String centreCode, String centreName, List<String>sessions, String PwDFriendly ){
+
 		this.centreName = centreName;
 		this.centreCode = centreCode;
 		if( PwDFriendly.equals("YES") || PwDFriendly.equals("Yes") || PwDFriendly.indexOf("Y") >= 0 || PwDFriendly.indexOf("y") >=0 )
-			pwdFriendly = true;
+			this.pwdFriendly = true;
 
 		this.sessionMap = new TreeMap<String, Session>();
 		for(int i = 0, s = 1; i < sessions.size(); i++, s++){
-			sessionMap.put( s+"", new Session(s+"", Integer.parseInt( sessions.get(i)  ) ) );
+			Session session =  new Session(s+"", Integer.parseInt( sessions.get(i)  ) );	
+			sessionMap.put( s+"", session );
 		}
 	}
 	
@@ -29,7 +30,7 @@ public class Centre{
 
 		Set<String> sessions = sessionMap.keySet();
 		for(String session: sessions){
-			sessionMap.get( session ).print(zone, cityCode, centreCode );
+			sessionMap.get( session ).print(zone, cityCode, centreCode, centreName );
 			System.out.println();
 		}
 	}

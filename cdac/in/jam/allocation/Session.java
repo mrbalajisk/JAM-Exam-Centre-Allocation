@@ -9,6 +9,7 @@ public class Session{
 	String sessionId;
 	int capacity;
 	int allocated;
+	int pwdCount;
 
 	Map<String, Paper> paperMap;
 	
@@ -17,6 +18,7 @@ public class Session{
 		this.sessionId = sessionId;
 		this.capacity = capacity;
 		this.allocated = 0;
+		this.pwdCount = 0;
 		this.paperMap = new TreeMap<String, Paper>();
 	}
 
@@ -26,9 +28,9 @@ public class Session{
 		return false;	
 	}
 	
-	void print(String zoneCode, String cityCode, String centreCode){
+	void print(String zoneCode, String cityCode, String centreCode, String centreName){
 		Set<String> papers = paperMap.keySet();
-		System.out.print(zoneCode+", "+cityCode+", "+centreCode+", "+sessionId+", "+capacity+", "+allocated);
+		System.out.print(zoneCode+", "+cityCode+", "+centreCode+", "+centreName+", "+sessionId+", "+capacity+", "+allocated);
 		for(String paper: papers){
 			paperMap.get( paper ).print();	
 		}

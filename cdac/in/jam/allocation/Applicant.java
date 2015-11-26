@@ -9,6 +9,7 @@ public class Applicant{
 	String gender;	
 	String paperCode1;
 	String paperCode2;
+	String zoneId;	
 	boolean isPwD;
 	boolean isScribeReq;
 	String[] choices;
@@ -19,11 +20,12 @@ public class Applicant{
 	Session session;
 	int allotedChoice;
 
-	Applicant(String enrollment, String name, String gender, String isPD, String isScribe, String paperCode1, String paperCode2, String choice1, String choice2, String choice3){
+	Applicant(String enrollment, String name, String gender, String isPD, String isScribe, String paperCode1, String paperCode2, String choice1, String choice2, String choice3, String zoneId){
 
 		this.enrollment = enrollment;
 		this.name = name;
 		this.gender = gender;
+		this.zoneId = zoneId;
 
 		this.paperCode1 = paperCode1;
 		if( paperCode2 != null && paperCode2.trim().length() > 0)
@@ -46,8 +48,8 @@ public class Applicant{
 		this.registrationId.put( this.paperCode2, null );		
 
 		this.isAllocated = new LinkedHashMap<String, String>();
-		this.isAllocated.put( this.paperCode1, null);
-		this.isAllocated.put( this.paperCode2, null);
+		this.isAllocated.put( this.paperCode1, "false");
+		this.isAllocated.put( this.paperCode2, "false");
 		
 	
 		this.centre = null;
@@ -56,7 +58,7 @@ public class Applicant{
 	}
 
 	void print(){
-		System.out.println(enrollment+", "+paperCode1+", "+paperCode2+", "+registrationId.get( paperCode1 )+", "+registrationId.get( paperCode2 ) );
+		System.out.println("Zone"+zoneId+", "+enrollment+", "+isPwD+", "+allotedChoice+", "+paperCode1+", "+paperCode2+", "+registrationId.get( paperCode1 )+", "+registrationId.get( paperCode2 ) );
 	}
 } 
 
