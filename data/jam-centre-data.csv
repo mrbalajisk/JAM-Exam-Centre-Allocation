@@ -1,19 +1,19 @@
-Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,Fn,AN,PwD Y/N
-1,IISc,1,101,JSS Academy of Technical Education,"Uttarahalli,",Kengeri Road,Bengaluru,560060,Bengaluru,Karnataka,193,0,Yes
+Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,Session1, Session2,PwD Y/N
+1,IISc,1,101,JSS Academy of Technical Education,"Uttarahalli,",Kengeri Road,Bengaluru,560060,Bengaluru,Karnataka,193,193,Yes
 1,IISc,1,102,SJB Institute of Technology,"No 67, BGS Health  and  Education City, ","Uttarahalli Road, Kengeri",Bengaluru,560060,Bengaluru,Karnataka,200,200,Yes
 1,IISc,1,103,AMC Engineering College,"18th Kilometer,",Bannerghatta road,Bengaluru,560083,Bengaluru,Karnataka,300,296,No
-1,IISc,1,104,ACS College of Engineering,"#201,,  Kambipura,  ","Near RajaRajeswari Medical College & Hospital,,",Mysore Road,560074,Bengaluru,Karnataka,200,0,No
+1,IISc,1,104,ACS College of Engineering,"#201,,  Kambipura,  ","Near RajaRajeswari Medical College & Hospital,,",Mysore Road,560074,Bengaluru,Karnataka,200,200,No
 1,IISc,2,105,B V Bhoomaraddi College of Engineering & Technology,"Vidyanagar,",Hubli,,580031,Hubli,Karnataka,260,139,Yes
 1,IISc,6,106,P A College of Engineering,"Nadupadav, ,","Montepadav post, Kairangala",Near Mangalore University,574153,Mangalore,Karnataka,158,89,Yes
-1,IISc,5,107,Government College of Engineering,"Mangattuparamba, ","Parassinikadavu(P.O),",Kannur,670563,Kannur,Kerala,230,0,Yes
+1,IISc,5,107,Government College of Engineering,"Mangattuparamba, ","Parassinikadavu(P.O),",Kannur,670563,Kannur,Kerala,230,230,Yes
 1,IISc,3,108,MES Institute of Technology and Management,"Chathannoor P O,", Kollam,,691572,Kollam,Kerala,168,93,No
-1,IISc,4,109,Gurudeva Institute of Science and Technology,"Vennimala, ","Payyapadi P.O., Puthuppally, ",Kottayam,686516,Kottayam,Kerala,120,0,No
+1,IISc,4,109,Gurudeva Institute of Science and Technology,"Vennimala, ","Payyapadi P.O., Puthuppally, ",Kottayam,686516,Kottayam,Kerala,120,120,No
 1,IISc,4,110,Mangalam College of Engineering,"Vettimukal P.O, ","Mangalam Hills, ",Ettumanoor,686631,Kottayam,Kerala,262,184,Yes
 1,IISc,5,111,Farook College,"Near Farook College Post Office, ",Kozhikode,,673632,Kozhikode,Kerala,130,130,Yes
 1,IISc,5,112,AWH Engineering College,Kuttikattor P O,Kozhikode,,673008,Kozhikode,Kerala,180,180,Yes
 1,IISc,5,113,National institute of Technology,"NITC Campus  PO , ","Kettangal Koduvally Road,",,673601,Kozhikode,Kerala,78,56,No
 1,IISc,7,114,Ahalia School Of Engineering & Technology,"Ahalia Health, ","Heritage & Knowledge Village,"," Kozhippara, ",678557,Palakkad,Kerala,87,79,Yes
-1,IISc,8,115,IES College of Engineering,"Poovathur parappoor Rd,  ","Chittilappily PO,",,680551,Thrissur,Kerala,126,0,No
+1,IISc,8,115,IES College of Engineering,"Poovathur parappoor Rd,  ","Chittilappily PO,",,680551,Thrissur,Kerala,126,126,No
 1,IISc,8,116,Universal Engineering College,"Vallivattom P.O, ","Konathakunnu  Via, ","Near Mathilakam,",680123,Thrissur,Kerala,140,145,Yes
 2,IIT Bombay,10,201,Centre-1,Add1,Add2,Add3,111111,Goa,Maharashtra,38,34,Yes
 2,IIT Bombay,11,202,Centre-2,Add1,Add2,Add3,111111,Hyderabad,Maharashtra,442,352,Yes
@@ -24,16 +24,32 @@ Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,Fn,AN,PwD Y
 2,IIT Bombay,16,207,Centre-7,Add1,Add2,Add3,111111,Pune,Maharashtra,871,684,Yes
 2,IIT Bombay,17,208,Centre-8,Add1,Add2,Add3,111111,Vadodara,Maharashtra,168,123,Yes
 2,IIT Bombay,9,209,Centre-9,Add1,Add2,Add3,111111,Ahmedabad,Maharashtra,361,241,Yes
-3,IIT Delhi,18,301,Centre-1,Add1,Add2,Add3,111111,Delhi-NCR,Delhi,1507,968,Yes
-3,IIT Delhi,19,302,Centre-2,Add1,Add2,Add3,111111,Faridabad,Delhi,234,166,Yes
-3,IIT Delhi,20,303,Centre-3,Add1,Add2,Add3,111111,Ghaziabad,Delhi,225,113,Yes
-3,IIT Delhi,21,304,Centre-4,Add1,Add2,Add3,111111,Gurgaon,Delhi,404,219,Yes
-3,IIT Delhi,22,305,Centre-5,Add1,Add2,Add3,111111,Hisar,Delhi,712,394,Yes
-3,IIT Delhi,23,306,Centre-6,Add1,Add2,Add3,111111,Indore,Delhi,143,93,Yes
-3,IIT Delhi,24,307,Centre-7,Add1,Add2,Add3,111111,Jaipur,Delhi,1882,836,Yes
-3,IIT Delhi,25,308,Centre-8,Add1,Add2,Add3,111111,Jammu,Delhi,101,57,Yes
-3,IIT Delhi,26,309,Centre-9,Add1,Add2,Add3,111111,Jodhpur,Delhi,176,76,Yes
-3,IIT Delhi,27,310,Centre-10,Add1,Add2,Add3,111111,New Delhi,Delhi,3428,2239,Yes
+3,IIT DELHI,25,301,Online Infra,A-22 1st floor,Vivek vihar Phase-2,,110095,Delhi,Delhi,101,57,No
+3,IIT DELHI,19,302,B S Anangpuria Educational Institute,Village Alampur ,Ballabgarh-Sohna Road,,121004,Faridabad,Haryana,225,200,No
+3,IIT DELHI,27,303,Manav Rachna University,Aravali Campus Sector 43  ,Delhi Surajkund Road, Aravli Hills,121004,Faridabad,Haryana,650,160,Yes
+3,IIT DELHI,18,304,Greater Noida College of Technology,Plot No. 6B,Knowledge Park II,,201306,Greater Noida,Uttar Pradesh,191,180,No
+3,IIT DELHI,18,305,IEC Group of Institutions,Plot No.4, Institutional Area,,201306,Greater Noida,Uttar Pradesh,228,200,No
+3,IIT DELHI,18,306,ITS Engineering College,Plot No. 46,Knowledge  Park -III,,201308,Greater Noida,Uttar Pradesh,360,260,No
+3,IIT DELHI,18,307,Mangalmay Institute of Engineering Technology,Plot No 8,Knowledge Park - II,,201310,Greater Noida,Uttar Pradesh,250,200,No
+3,IIT DELHI,18,308,Noida Institute of Engineering & Technology Greater Noida,Plot No.19,Knowledge Park-II Institutional Area,,201306,Greater Noida,Uttar Pradesh,500,300,No
+3,IIT DELHI,20,309,Sharda University,Plot no. 32-34,Knowledge park III,,201306,Greater Noida,Uttar Pradesh,540,300,No
+3,IIT DELHI,27,310,G. L. B. Institute of Technology and Management,Plot no. 2,Knowledge Park - III,,201308,Greater Noida,Uttar Pradesh,545,300,No
+3,IIT DELHI,27,311,Greater Noida Institute of Technology,Plot no 7,Knowledge park -II,,201306,Greater Noida,Uttar Pradesh,635,300,No
+3,IIT DELHI,27,312,IIMT College of Management,Plot No. A-20,Knowledge Park III,,201308,Greater Noida,Uttar Pradesh,635,544,No
+3,IIT DELHI,21,313,DPG Institute Of Technology And Management,Near Marble Market ,Sector 34,,122004,Gurgaon,Haryana,237,200,Yes
+3,IIT DELHI,21,314,KIIT College of Engineering,KIIT Campus Sohna Road,Bhondsi,,122102,Gurgaon,Haryana,346,260,No
+3,IIT DELHI,27,315,Dronacharya College Of Engineering Gurgaon,Khentawas, Farukh Nagar,,123506,Gurgaon,Haryana,455,300,No
+3,IIT DELHI,22,316,OM Institute Of Technology and Management,12 KM Stone VPO Juglan,VPO Juglan Hisar-Chandigarh Road,,125001,Hisar,Haryana,462,144,No
+3,IIT DELHI,22,317,Prannath Parnami Institute of Management and Technology,NH 65,Village Choudhriwas,Distt. Hisar,125001,Hisar,Haryana,250,250,No
+3,IIT DELHI,23,318,Lakshmi Narain College of Technology,Village Bhavrsala Rewti range Sanwer Road,Behind SAIMS Hospital,,453331,Indore,Madhya Pradesh,143,93,No
+3,IIT DELHI,24,319,Arya College of Engineering and Information Technology,Arya OLD Main Campus  S.P.42,RIICO Industrial Area Delhi Road Kukas,,302028,Jaipur,Rajasthan,442,0,YES
+3,IIT DELHI,24,320,JECRC UNIVERSITY,PLOT NO. IS-2036 TO 2039  RAMCHANDRAPURA  SITAPURA INDS. AERA EXTN. ,NEAR MAHATAMA GHANDHI HOSPITAL VILL: VIDHANI,,303905,Jaipur,Rajasthan,260,136,Yes
+3,IIT DELHI,24,321,Maharishi Arvind Institute of Engineering and Technology,Sector 7 Madhyam Marg,Mansarovar,,302020,Jaipur,Rajasthan,200,140,No
+3,IIT DELHI,24,322,Rajasthan College of Engineering for Women,Bhankrota,Ajmer Road,,302026,Jaipur,Rajasthan,220,140,No
+3,IIT DELHI,24,323,Vivekananda Global University,Sector 36 NRI Road,Jagatpura Road Jagatpura,,303012,Jaipur,Rajasthan,240,140,No
+3,IIT DELHI,24,324,Vivekananda Institute of Technology,Sector 36 NRI Road,Sisyawas  Jagatpura,,303012,Jaipur,Rajasthan,260,140,No
+3,IIT DELHI,24,325,Vivekananda Institute of Technology East,Sector 36 NRI Road,Sisyawas  Jagatpura,,303012,Jaipur,Rajasthan,260,140,No
+3,IIT DELHI,26,326,MAULANA AZAD UNIVERSITY,Kamla Nehru Nagar  Muslim School Campus,Pal Link Road,,342001,Jodhpur,Rajasthan,176,76,No
 4,IIT Guwahati,30,401,Royal Group of Institutions,"Betkuchi, Opp. Tirupati Balaji Temple","ISBT, N.H.- 37",,781035,Guwahati,Assam,330,325,YES
 4,IIT Guwahati,30,402,Scholar's Institute of Technology and Management,"Garoghuli Road, Garchuk",,,781035,Guwahati,Assam,170,170,YES
 4,IIT Guwahati,30,403,North Eastern Regional Institute of Management (NERIM),"Padma Nath Sarmah Bhawan, Tripura Road, Jayanagar",Khanapara,,781022,Guwahati,Assam,108,108,NO
@@ -47,8 +63,8 @@ Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,Fn,AN,PwD Y
 4,IIT Guwahati,33,411,Netaji Subhas Institute of Technology,Amhara,Bihta,,801118,Patna,Bihar,235,100,NO
 4,IIT Guwahati,29,412,DAV Public School - Koyla Nagar,BCCL Township ,Koyla Nagar,,826005,Dhanbad,Jharkhand,110,110,YES
 4,IIT Guwahati,28,413,Asansol Engineering College,Vivekananda Sarani,Kanyapur,Dist.: Burdwan,713305,Asansol,West Bengal,480,480,YES
-4,IIT Guwahati,32,414,Kalyani Government Engineering College,Kalyani University Campus,Dist. Nadia,,741235,Kalyani,West Bengal,250,200,YES
-4,IIT Guwahati,32,415,Ideal Institute of Engineering,Kalyani Shilpanchal,Opp.: Kalyani Shilpanchal Railway Station,Dist. Nadia,741235,Kalyani,West Bengal,104,100,NO
+4,IIT Guwahati,32,414,Kalyani Government Engineering College,Kalyani University Campus,Dist. Nadia,,741235,Kalyani,West Bengal,260,200,YES
+4,IIT Guwahati,32,415,Ideal Institute of Engineering,Kalyani Shilpanchal,Opp.: Kalyani Shilpanchal Railway Station,Dist. Nadia,741235,Kalyani,West Bengal,100,100,NO
 4,IIT Guwahati,34,416,Siliguri Institute of Technology,Salbari,Sukna,Dist. Darjeeling,734009,Siliguri,West Bengal,450,450,YES
 5,IIT Kanpur,35,501,K. P. Group of Institutions,NH-2 Agra-Firozabad Road  Etmadpur,,,283202,Agra,Uttar Pradesh,212,146,NO
 5,IIT Kanpur,36,502,United College of Engineering and Research naini Ald,A-31 UPSIDC Industrial Area,Naini-Allahabad,,211010,Allahabad,Uttar Pradesh,150,90,NO
@@ -66,7 +82,7 @@ Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,Fn,AN,PwD Y
 5,IIT Kanpur,41,513,BHU University CENTER 1,Banaras Hindu University Mechanical Department,Varanasi Uttar Pradesh India,,221005,Varanasi,Uttar Pradesh,210,181,NO
 5,IIT Kanpur,41,514,Institute of Hardware Networking & Communication ,D59/105/65 CHANDRIKA NAGAR SIGRA,Varanasi Uttar Pradesh India,,221010,Varanasi,Uttar Pradesh,160,156,NO
 5,IIT Kanpur,41,515,Ambition Institute of Technology,G. T. Road Marhia, Parao-Varanasi,,221102,Varanasi,Uttar Pradesh,110,88,NO
-5,IIT Kanpur,41,517,Kashi Institute Of Technology CENTER 2,MS 23 Varanasi-Allahabad Highway,Mirzamurad-Varanasi,,221307,Varanasi,Uttar Pradesh,300,0,NO
+5,IIT Kanpur,41,517,Kashi Institute Of Technology CENTER 1,MS 23 Varanasi-Allahabad Highway,Mirzamurad-Varanasi,,221307,Varanasi,Uttar Pradesh,300,0,NO
 5,IIT Kanpur,41,518,IAIT GROUP OF INSTITUTIONS ,OPP. DLW PETROL PUMP KAKRMATTA,Varanasi Uttar Pradesh India ,,221010,Varanasi,Uttar Pradesh,60,60,NO
 6,IIT Karagpur,47,601,S R K Institute of Technology,Enikepadu,Krishna District,,521108,Vijayawada,Andhra Pradesh,250,250,Yes
 6,IIT Karagpur,48,602,VITS COLLEGE OF ENGINEERING,Sontyam,Anandapuram Mandal,,531173,Visakhapatnam,Andhra Pradesh,200,200,No
@@ -99,36 +115,10 @@ Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,Fn,AN,PwD Y
 7,IIT Madras,51,706,Sree Narayana Gurukulam College Of Engineering,Kadayiruppu P.O.,Kolenchery,Cochin,682311,Ernakulam,Kerala,260,147,Yes
 7,IIT Madras,53,707,Tata Consultancy Services ILP,Peepul Park,TechnoPark Campus,Kazhakootam,695581,Thiruvananthapuram,Kerala,180,174,Yes
 7,IIT Madras,56,708,Jaya Institute of Technology and Science for Women,Sy No 910 Ward No 7 Block 1,Near Padmakshema Temple ,Hanmakonda ,506011,Warangal,Telangana,82,76,No
-8,IIT Roorkee,57,801,Uttarnachal University,"Arcadia Grant, Chandanwari, Prem Nagar, Dehradun, Uttarakhand, India, Pincode-248001",Add2,Add3,700129,Dehradun,Uttarakhand,363,253,Yes
-8,IIT Roorkee,58,802,Lovely Professional University - Centre-1 (Blocks 25 - 28),"Jalandhar-Delhi G.T. Road, NH-1, Chaheru, Phagwara, Punjab, India, Pincode-144411",Add2,Add3,700091,Phagwara,Punjab,421,266,Yes
-8,IIT Roorkee,59,803,Geeta Institute of Management & Technology Kanipla,"166th Kms.Milestone on G.T. Road, Village-Kanipla, Kurukshetra, Haryana, India, Pincode-136119",Add2,Add3,601301,Kurukshetra,Haryana,344,253,Yes
-8,IIT Roorkee,60,804,Chandigarh University Gharuan,"NH-95 Chandigarh-Ludhiana Highway, Gharuan, District-Mohali, Punjab, India, Pincode-140413",Add2,Add3,642109,Mohali,Punjab,694,473,Yes
-8,IIT Roorkee,61,805,Moradabad Institute of Technology,"Ram Ganga Vihar Phase-II, MDA Colony, Kanth Road, Moradabad, Uttar Pradesh, India, Pincode-244001",Add2,Add3,625008,Moradabad,Uttar Pradesh,167,90,Yes
-8,IIT Roorkee,62,806,TAI Infotech Pvt Ltd,"1st Floor, H-159, Sector-63, Behind Halidram, Noida, Uttar Pardesh, India, Pincode-201301",Add2,Add3,620024,Noida,Uttar Pradesh,35,55,Yes
-8,IIT Roorkee,63,807,Quantum School of Technology,"22 km Milestone, Mandawar, Roorkee-Dehradun Highway (NH- 73), Chatmalpur, Uttarakhand, India, Pincode-247167",Add2,Add3,627152,Roorkee,Uttarakhand,288,245,Yes
-3,IIT DELHI,25,301,Online Infra,A-22 1st floor,Vivek vihar Phase-2,,110095,Delhi,Delhi,101,57,No
-3,IIT DELHI,19,302,B S Anangpuria Educational Institute,Village Alampur ,Ballabgarh-Sohna Road,,121004,Faridabad,Haryana,225,200,No
-3,IIT DELHI,27,303,Manav Rachna University,Aravali Campus Sector 43  ,Delhi Surajkund Road, Aravli Hills,121004,Faridabad,Haryana,650,160,Yes
-3,IIT DELHI,18,304,Greater Noida College of Technology,Plot No. 6B,Knowledge Park II,,201306,Greater Noida,Uttar Pradesh,191,180,No
-3,IIT DELHI,18,305,IEC Group of Institutions,Plot No.4, Institutional Area,,201306,Greater Noida,Uttar Pradesh,228,200,No
-3,IIT DELHI,18,306,ITS Engineering College,Plot No. 46,Knowledge  Park -III,,201308,Greater Noida,Uttar Pradesh,360,260,No
-3,IIT DELHI,18,307,Mangalmay Institute of Engineering Technology,Plot No 8,Knowledge Park - II,,201310,Greater Noida,Uttar Pradesh,250,200,No
-3,IIT DELHI,18,308,Noida Institute of Engineering & Technology Greater Noida,Plot No.19,Knowledge Park-II Institutional Area,,201306,Greater Noida,Uttar Pradesh,500,300,No
-3,IIT DELHI,20,309,Sharda University,Plot no. 32-34,Knowledge park III,,201306,Greater Noida,Uttar Pradesh,540,300,No
-3,IIT DELHI,27,310,G. L. B. Institute of Technology and Management,Plot no. 2,Knowledge Park - III,,201308,Greater Noida,Uttar Pradesh,545,300,No
-3,IIT DELHI,27,311,Greater Noida Institute of Technology,Plot no 7,Knowledge park -II,,201306,Greater Noida,Uttar Pradesh,635,300,No
-3,IIT DELHI,27,312,IIMT College of Management,Plot No. A-20,Knowledge Park III,,201308,Greater Noida,Uttar Pradesh,635,544,No
-3,IIT DELHI,21,313,DPG Institute Of Technology And Management,Near Marble Market ,Sector 34,,122004,Gurgaon,Haryana,237,200,Yes
-3,IIT DELHI,21,314,KIIT College of Engineering,KIIT Campus Sohna Road,Bhondsi,,122102,Gurgaon,Haryana,346,260,No
-3,IIT DELHI,27,315,Dronacharya College Of Engineering Gurgaon,Khentawas, Farukh Nagar,,123506,Gurgaon,Haryana,455,300,No
-3,IIT DELHI,22,316,OM Institute Of Technology and Management,12 KM Stone VPO Juglan,VPO Juglan Hisar-Chandigarh Road,,125001,Hisar,Haryana,462,144,No
-3,IIT DELHI,22,317,Prannath Parnami Institute of Management and Technology,NH 65,Village Choudhriwas,Distt. Hisar,125001,Hisar,Haryana,250,250,No
-3,IIT DELHI,23,318,Lakshmi Narain College of Technology,Village Bhavrsala Rewti range Sanwer Road,Behind SAIMS Hospital,,453331,Indore,Madhya Pradesh,143,93,No
-3,IIT DELHI,24,319,Arya College of Engineering and Information Technology,Arya OLD Main Campus  S.P.42,RIICO Industrial Area Delhi Road Kukas,,302028,Jaipur,Rajasthan,442,0,YES
-3,IIT DELHI,24,320,JECRC UNIVERSITY,PLOT NO. IS-2036 TO 2039  RAMCHANDRAPURA  SITAPURA INDS. AERA EXTN. ,NEAR MAHATAMA GHANDHI HOSPITAL VILL: VIDHANI,,303905,Jaipur,Rajasthan,260,136,Yes
-3,IIT DELHI,24,321,Maharishi Arvind Institute of Engineering and Technology,Sector 7 Madhyam Marg,Mansarovar,,302020,Jaipur,Rajasthan,200,140,No
-3,IIT DELHI,24,322,Rajasthan College of Engineering for Women,Bhankrota,Ajmer Road,,302026,Jaipur,Rajasthan,220,140,No
-3,IIT DELHI,24,323,Vivekananda Global University,Sector 36 NRI Road,Jagatpura Road Jagatpura,,303012,Jaipur,Rajasthan,240,140,No
-3,IIT DELHI,24,324,Vivekananda Institute of Technology,Sector 36 NRI Road,Sisyawas  Jagatpura,,303012,Jaipur,Rajasthan,260,140,No
-3,IIT DELHI,24,325,Vivekananda Institute of Technology East,Sector 36 NRI Road,Sisyawas  Jagatpura,,303012,Jaipur,Rajasthan,260,140,No
-3,IIT DELHI,26,326,MAULANA AZAD UNIVERSITY,Kamla Nehru Nagar  Muslim School Campus,Pal Link Road,,342001,Jodhpur,Rajasthan,176,76,No
+8,IIT Roorkee,57,801,Uttarnachal University,Arcadia Grant, Chandanwari, Prem Nagar,248001,Dehradun,Uttarakhand,363,253,Yes
+8,IIT Roorkee,58,802,Lovely Professional University - Centre-1 (Blocks 25 - 28),Jalandhar-Delhi G.T. Road, NH-1, Chaheru,144411,Phagwara,Punjab,421,266,Yes
+8,IIT Roorkee,59,803,Geeta Institute of Management & Technology Kanipla,166th Kms.Milestone on G.T. Road, Village-Kanipla,,136119,Kurukshetra,Haryana,344,253,Yes
+8,IIT Roorkee,60,804,Chandigarh University Gharuan,NH-95 Chandigarh-Ludhiana Highway, Gharuan,,140413,Mohali,Punjab,694,473,Yes
+8,IIT Roorkee,61,805,Moradabad Institute of Technology,Ram Ganga Vihar Phase-II, MDA Colony, Kanth Road,244001,Moradabad,Uttar Pradesh,167,90,Yes
+8,IIT Roorkee,62,806,TAI Infotech Pvt Ltd,1st Floor, H-159 Sector-63, Behind Halidram,201301,Noida,Uttar Pradesh,35,55,Yes
+8,IIT Roorkee,63,807,Quantum School of Technology,22 km Milestone Mandawar, Roorkee-Dehradun Highway (NH-73), Chatmalpur,247167,Roorkee,Uttarakhand,288,245,Yes

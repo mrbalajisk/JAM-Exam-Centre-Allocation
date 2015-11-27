@@ -8,15 +8,19 @@ public class Session{
 
 	String sessionId;
 	int capacity;
+	int pwdCapacity;
+	int pwdAllocated;
 	int allocated;
 	int pwdCount;
 
 	Map<String, Paper> paperMap;
 	
-	Session(String sessionId, int capacity){
+	Session(String sessionId, int capacity, int pwdCapacity){
 
 		this.sessionId = sessionId;
 		this.capacity = capacity;
+		this.pwdCapacity = pwdCapacity;
+		this.pwdAllocated = 0;
 		this.allocated = 0;
 		this.pwdCount = 0;
 		this.paperMap = new TreeMap<String, Paper>();

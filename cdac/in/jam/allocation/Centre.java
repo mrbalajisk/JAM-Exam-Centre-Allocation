@@ -21,18 +21,27 @@ public class Centre{
 
 		this.sessionMap = new TreeMap<String, Session>();
 		for(int i = 0, s = 1; i < sessions.size(); i++, s++){
-			Session session =  new Session(s+"", Integer.parseInt( sessions.get(i)  ) );	
-			sessionMap.put( s+"", session );
+			Session session =  null;
+			if( pwdFriendly )	
+				sessionMap.put(s+"", new Session(s+"", Integer.parseInt( sessions.get(i) ), 5 ) );
+			else
+				sessionMap.put(s+"", new Session(s+"", Integer.parseInt( sessions.get(i) ), 0 ) );
 		}
+	}
+
+	static void header(){
+		System.out.println("Zone, CityCode, Centre-Code, CentreName, Pwd-Friendly, Session1(Capacity|Allocated|PwD), Session2( Capacity|Allocated|PwD) ");
 	}
 	
 	void print(String zone, String cityCode){
 
-		Set<String> sessions = sessionMap.keySet();
-		for(String session: sessions){
-			sessionMap.get( session ).print(zone, cityCode, centreCode, centreName );
-			System.out.println();
+		System.out.print( zone+", "+cityCode+", "+centreCode+", '"+centreName+"', "+pwdFriendly);
+		Set<String> sessionIds = sessionMap.keySet();
+		for(String sessionId: sessionIds){
+			Session session = sessionMap.get( sessionId );
+			System.out.print(", ("+session.capacity+"|"+session.allocated+"|"+session.pwdCount+")");
 		}
+		System.out.println();
 	}
 } 
 
