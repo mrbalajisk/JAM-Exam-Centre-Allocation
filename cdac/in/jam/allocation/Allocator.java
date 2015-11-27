@@ -242,20 +242,15 @@ public class Allocator{
 				int count = 0;
 
 				for(Applicant applicant: applicants){
-
 						if( applicant.paperCode1 != null && applicant.paperCode2 != null ){
 							if( applicant.isAllocated.get( applicant.paperCode1 ).equals("true")  && applicant.isAllocated.get( applicant.paperCode2).equals("true") )
-							continue;
-
+								continue;
 						}else if ( applicant.paperCode1 != null ) {
-
 							if( applicant.isAllocated.get( applicant.paperCode1 ).equals("true") )
 								continue;
-
 						}
 
 						String cityCode = applicant.choices[ choiceNumber ];			
-
 						City city = cityMap.get( cityCode );
 
 						if( city == null){
@@ -266,58 +261,59 @@ public class Allocator{
 
 						}
 
-
-						String session1 = paperSessionMap.get( applicant.paperCode1 );	
-
 						if( applicant.paperCode1 != null && applicant.paperCode2 != null ){ // Double Paper
-
+								
+								String session1 = paperSessionMap.get( applicant.paperCode1 );	
 								String session2 = paperSessionMap.get( applicant.paperCode2 );
 
 								if( ( city.sessionMap.get( session1 ).capacity -  city.sessionMap.get( session1 ).allocated ) > 0 && 
-												( city.sessionMap.get( session2 ).capacity -  city.sessionMap.get( session2 ).allocated ) > 0 ){
+									( city.sessionMap.get( session2 ).capacity -  city.sessionMap.get( session2 ).allocated ) > 0 ){
 
 										city.sessionMap.get( session1 ).allocated++;
 										Paper paper = city.sessionMap.get( session1 ).paperMap.get( applicant.paperCode1 );
 										if( paper == null){
 												paper = new Paper( applicant.paperCode1, 0 );
 										}
+
 										paper.applicants.add( applicant );
 										applicant.isAllocated.put( paper.paperCode, "true" );	
-
 										city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
-										city.sessionMap.get( session2 ).allocated++;
 
+
+										city.sessionMap.get( session2 ).allocated++;
 										paper = city.sessionMap.get( session2 ).paperMap.get( applicant.paperCode2 );
 										if( paper == null){
 												paper = new Paper( applicant.paperCode2, 0 );
 										}
 										paper.applicants.add( applicant );
 										city.sessionMap.get( session2 ).paperMap.put( applicant.paperCode2, paper );	
-
 										applicant.isAllocated.put( paper.paperCode, "true" );	
 										applicant.allotedChoice = ( choiceNumber + 1);
 										count++;
-
 								}   				
+						}else if ( applicant.paperCode1 != null && applicant.paperCode2 == null ){
 
-						}else if ( (city.sessionMap.get( session1 ).capacity -  city.sessionMap.get( session1 ).allocated ) > 0 ){  // Single Paper
+							String session1 = paperSessionMap.get( applicant.paperCode1 );	
+				
+							if ( (city.sessionMap.get( session1 ).capacity -  city.sessionMap.get( session1 ).allocated ) > 0 ){  // Single Paper
 
 								city.sessionMap.get( session1 ).allocated++;
 								Paper paper = city.sessionMap.get( session1 ).paperMap.get( applicant.paperCode1 );
 								if( paper == null){
 										paper = new Paper( applicant.paperCode1, 0 );
 								}
+
 								paper.applicants.add( applicant );
 								city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
 								applicant.isAllocated.put( paper.paperCode, "true" );	
 								applicant.allotedChoice = ( choiceNumber + 1);
 								count++;
-						}
+							}
+					  }
 
 				}	
 				System.out.println("Allocated: "+count);
 		}
-
 
 
 		void centerAllocate(City city){
@@ -335,11 +331,9 @@ public class Allocator{
 								allocatioDone = false;
 
 								Set<String> paperCodes 	= session.paperMap.keySet();
-
 								for( String paperCode: paperCodes ){
 
 										Paper paper = session.paperMap.get( paperCode );
-
 										Set<String> centreCodes = city.centreMap.keySet();
 
 										for( String centreCode: centreCodes ){
@@ -350,20 +344,13 @@ public class Allocator{
 
 														Applicant applicant = paper.applicants.get(0);
 
-														if( applicant.isPwD && ( !centre.pwdFriendly || centre.sessionMap.get("1").pwdCount==5 )){
-
-															paper.applicants.remove( applicant );
-															paper.applicants.add( applicant );
-															continue;
-														}
-
-														if( applicant.paperCode1 != null && applicant.paperCode2 != null ) {
-
-															if( applicant.isPwD && centre.sessionMap.get("2").pwdCount == 5 ){	
+														if( applicant.isPwD && ( !centre.pwdFriendly || centre.sessionMap.get( session.sessionId ).pwdCount == 5 )){
 																paper.applicants.remove( applicant );
 																paper.applicants.add( applicant );
 																continue;
-															}
+														}
+													
+														if( applicant.paperCode1 != null && applicant.paperCode2 != null ) {
 
 															if(( centre.sessionMap.get("1").capacity - centre.sessionMap.get("1").allocated ) > 0 																					&& ( centre.sessionMap.get("2").capacity - centre.sessionMap.get("2").allocated ) > 0 ){			
 
@@ -376,6 +363,7 @@ public class Allocator{
 																		tpaper.applicants.remove( applicant );
 																		applicant.registrationId.put( tpaper.paperCode, generateRegistrationId( tsession, centre, tpaper,"B" ) ) ;
 																		allocatedApplicants.add( applicant );			
+
 																		if( applicant.isPwD ){
 																			centre.sessionMap.get("1").pwdCount++;
 																			centre.sessionMap.get("2").pwdCount++;
@@ -399,6 +387,13 @@ public class Allocator{
 																		}
 																}
 														}				
+
+														if( applicant.registrationId.get( paper.paperCode ) == null ){
+																System.out.println(">>>"+city.cityCode+", "+centre.centreCode+", "+applicant.enrollment+", "+session.sessionId+", "+applicant.paperCode1+","+applicant.paperCode2+"["+centre.sessionMap.get("1").capacity+", "+centre.sessionMap.get("1").allocated+"], ["+centre.sessionMap.get("2").capacity+", "+centre.sessionMap.get("2").allocated+"]");
+																	//paper.applicants.remove( applicant );
+																	//paper.applicants.add( applicant );
+																	System.err.println( allocatedApplicants.size() );
+														}
 												}
 										}	
 								}
