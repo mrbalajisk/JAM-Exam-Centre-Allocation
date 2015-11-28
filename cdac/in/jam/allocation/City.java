@@ -13,6 +13,7 @@ public class City{
 	String cityName;
 	Map<String, Centre> centreMap;
 	Map<String, Session> sessionMap;
+	Map<String, Boolean> isPwdCentreSession;
 	
 	City(String code, String cityName){
 
@@ -20,14 +21,22 @@ public class City{
 		this.cityName = cityName;
 		this.centreMap = new LinkedHashMap<String, Centre>();
 		this.sessionMap = new LinkedHashMap<String, Session>();
+		this.isPwdCentreSession = new LinkedHashMap<String, Boolean>();
 	}
 
 	void print(String zone){
-
 		Set<String> centres = centreMap.keySet();
 		for(String centre: centres ){
 			centreMap.get( centre ).print( zone, cityCode );
 		}
 	}
+
+	void generateRegistrationId(){
+		Set<String> centres = centreMap.keySet();
+		for(String centre: centres ){
+			centreMap.get( centre ).generateRegistrationId();
+		}
+	}
+
 } 
 

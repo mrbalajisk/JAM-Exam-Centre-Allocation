@@ -23,9 +23,9 @@ public class Centre{
 		for(int i = 0, s = 1; i < sessions.size(); i++, s++){
 			Session session =  null;
 			if( pwdFriendly )	
-				sessionMap.put(s+"", new Session(s+"", Integer.parseInt( sessions.get(i) ), 5 ) );
+				sessionMap.put(s+"", new Session(s+"", Integer.parseInt( sessions.get(i) ) ) );
 			else
-				sessionMap.put(s+"", new Session(s+"", Integer.parseInt( sessions.get(i) ), 0 ) );
+				sessionMap.put(s+"", new Session(s+"", Integer.parseInt( sessions.get(i) ) ) );
 		}
 	}
 
@@ -34,14 +34,20 @@ public class Centre{
 	}
 	
 	void print(String zone, String cityCode){
-
 		System.out.print( zone+", "+cityCode+", "+centreCode+", '"+centreName+"', "+pwdFriendly);
 		Set<String> sessionIds = sessionMap.keySet();
 		for(String sessionId: sessionIds){
 			Session session = sessionMap.get( sessionId );
-			System.out.print(", ("+session.capacity+"|"+session.allocated+"|"+session.pwdCount+")");
+			System.out.print(", ("+session.capacity+"|"+session.allocated+"|"+session.pwdAllocated+")");
 		}
 		System.out.println();
+	}
+
+	void generateRegistrationId(){
+		Set<String> sessionIds = sessionMap.keySet();
+		for(String sessionId: sessionIds){
+			sessionMap.get( sessionId ).generateRegistrationId();
+		}
 	}
 } 
 

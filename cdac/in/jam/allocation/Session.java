@@ -3,27 +3,32 @@ package cdac.in.jam.allocation;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.Set;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Session{
 
 	String sessionId;
 	int capacity;
-	int pwdCapacity;
 	int pwdAllocated;
 	int allocated;
-	int pwdCount;
+	int count;
 
 	Map<String, Paper> paperMap;
+	List<Applicant> doublePapers;
+	List<Applicant> singlePapers;
 	
-	Session(String sessionId, int capacity, int pwdCapacity){
+	Session(String sessionId, int capacity){
 
 		this.sessionId = sessionId;
 		this.capacity = capacity;
-		this.pwdCapacity = pwdCapacity;
 		this.pwdAllocated = 0;
 		this.allocated = 0;
-		this.pwdCount = 0;
+		this.count = 0;
 		this.paperMap = new TreeMap<String, Paper>();
+
+		doublePapers = new ArrayList<Applicant>();
+		singlePapers = new ArrayList<Applicant>();
 	}
 
 	boolean isFull(){
@@ -38,6 +43,28 @@ public class Session{
 		for(String paper: papers){
 			paperMap.get( paper ).print();	
 		}
+	}
+
+	void generateRegistrationId(){
+		for(Applicant applicant: doublePapers){
+			applicant.registrationId.put( applicant.paperCode1, getRegistration( applicant.centre, "1",  applicant.paperCode1, "B" ) );	
+			applicant.registrationId.put( applicant.paperCode2, getRegistration( applicant.centre, "2",  applicant.paperCode2, "B" ) );	
+		}
+
+		for(Applicant applicant: singlePapers){
+			if( sessionId.equals("1")  )
+				applicant.registrationId.put( applicant.paperCode1, getRegistration( applicant.centre, "1",  applicant.paperCode1, "F" ) );	
+			else if( sessionId.equals("2") )
+				applicant.registrationId.put( applicant.paperCode1, getRegistration( applicant.centre, "2",  applicant.paperCode1, "A" ) );	
+		}
+	}
+
+	String getRegistration(Centre centre, String sessionId, String paperCode, String displayCode){
+			String count = "000"+( centre.sessionMap.get( sessionId ).count + 1 );
+			count = count.substring( count.length() - 3);
+			centre.sessionMap.get( sessionId ).count++;
+			String registrationId = paperCode+""+centre.centreCode+""+displayCode+""+count;
+			return registrationId.trim();
 	}
 } 
 
