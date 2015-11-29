@@ -6,9 +6,24 @@ import java.util.Set;
 import java.util.List;
 import java.util.ArrayList;
 
+
+class DateTime{
+
+	String date;
+	String time;
+
+	DateTime(String date, String time){
+		this.date = date;
+		this.time = time;
+	}
+
+}
+
 public class Session{
 
 	String sessionId;
+	String date;
+	String sessionTime;
 	int capacity;
 	int pwdAllocated;
 	int allocated;
@@ -17,6 +32,14 @@ public class Session{
 	Map<String, Paper> paperMap;
 	List<Applicant> doublePapers;
 	List<Applicant> singlePapers;
+
+	static Map<String, DateTime> dateTime = new TreeMap<String, DateTime>();
+
+	static{
+		dateTime.put("1", new DateTime("February 7 2016 (Sunday)", "09:00 AM") );	
+		dateTime.put("2", new DateTime("February 7 2016 (Sunday)", "02:00 PM") );	
+	}
+
 	
 	Session(String sessionId, int capacity){
 

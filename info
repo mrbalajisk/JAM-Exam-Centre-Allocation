@@ -1,0 +1,17 @@
+ application_id      
+ applicant_name      
+ exam_center_id      
+ paper_choice_id1    
+ paper_choice_id2    
+ registration_id1    
+ photo_path          
+ signature_path      
+ session             
+ session_date        
+ session_time1       
+ exam_city           
+ zone_id             
+ registration_id2    
+ session_time2       
+ disclaimer_accepted 
+ is_provisional
