@@ -1,0 +1,267 @@
+Zone, Enrollment, Name, CenterCode, PwD-Status, PaperCode1, PaperCode2, registration-Id1, registration-Id1, Session1-date, Session1-time,Session2-time, Provisional-Status, City-Choice1, City-Choice2, City-Choice3
+Zone3, C100X67, VINIT KUMAR, null, true, PH, null, null, null, null, null, null, false, 18, 27, 62
+Zone3, C100W73, SUBRAT MOHANTY, null, true, PH, BT, null, null, null, null, null, false, 18, 27, 62
+Zone3, C104U60, SHIVAM RASTOGI, null, true, MA, null, null, null, null, null, null, false, 20, 19, 20
+Zone3, C105D35, VINOD, null, true, PH, null, null, null, null, null, null, false, 18, 27, 21
+Zone3, C108N50, RITU, null, true, MA, null, null, null, null, null, null, false, 22, 18, 27
+Zone4, C101M69, PALLAB MOHAN KONWAR, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C110M35, BONDEEPA SAIKIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C102J32, SUNAYANA BORA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C112V47, ANANYA TAMULI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C112M24, DEBASISH SARMAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116W59, GEETASHREE DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C110F71, SHUBHAM SOM, null, true, CY, null, null, null, null, null, null, false, 20, 27, 62
+Zone4, C112Y92, MANASH JYOTI DAS, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C112Z31, NISHAD JAVED, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C112U64, ANKITA DUARAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C112V26, PARISMITA DAS, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C110J21, SUSMITA SAIKIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C103P16, UDDIPTA PARASAR, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C112T37, SHYANTI BHATTACHARYYA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C112C91, RAJAN, null, true, MA, null, null, null, null, null, null, false, 20, 18, 20
+Zone4, C113R59, SUKANYA SHARMA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118E53, BHARGAVEE GOSWAMI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C108S55, MAYUR DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C111A60, PURNIMA GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C113S76, GAURI GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C114M59, SEEMONA RAJKHOWA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C114F11, RITISHA DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C108W57, SANJAY BURAGOHAIN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C114D54, GARGI GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C117B79, ASHISH BORAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 16
+Zone4, C114G24, ANKIT DAS, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118D36, PALLAVI MAHANTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C110N12, SONIYA AGARWAL, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C115D78, PANKAJ DHAR, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C114C79, SHARANAN PHUKON, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C114D87, BIDYUT BIKASH BHARALI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C114T83, ASFI AHMED, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C115G90, DEEPSIKHA CHALIHA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C123X31, MD RIZWEE, null, true, CY, null, null, null, null, null, null, false, 18, 18, 19
+Zone4, C120N18, SAMUDRA KAJAL GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C115H40, BHAKTADEEP CHALIHA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C111D16, SILPISIKHA BORAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118E75, AJAY GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C116C90, PRONAMI GOGOI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C127Q44, NANDINI PRIYAM RAJKUMARI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C109K58, VAISHNABI SAIKIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C111B91, ANAL GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C111A80, BIBEKANANDA GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C119X56, ANKUR JYOTI BORAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C109C86, JYOTISHNA HAZARIKA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C115V42, TULUMONI GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C120D74, GOURANGA BURAGOHAIN, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C113K75, ARADHANA GUPTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118E67, AJAY KUMAR UPRETY, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C113Q91, KAUSTOV KUMAR GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C113R13, SHAHDAN HUSSAIN BORBORA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116W57, SUPRIYA DUTTA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C108S85, GAURAV PRATIM GOSWAMI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116M49, KRISHNA KAUSHIK, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone3, C116C10, RISHABH GOYAL, null, true, PH, null, null, null, null, null, null, false, 19, 27, 62
+Zone4, C113Q97, UJJAL PROTIM GOHAIN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C115P70, SUDAKHINA GOSWAMI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C116H65, AMOR MORAN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118F38, KIRAN NEOG, null, false, PH, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C116B91, PUJA GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C120F55, PADAM BAHADUR CHETRI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C107F31, RAJDEEP BHATTACHARYYA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C113B68, SATYASADHAN DOWARAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C113S39, POOJA GOHAIN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116R98, ADITYA PHUKON, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117B66, PRANJIT KUMAR BORA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 10
+Zone4, C116Q91, RIMA CHETRI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116H24, HEMANTA MORAN, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116R67, SAKIL ANWAR ULLAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C104M64, ABINASH DUTTA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 42
+Zone4, C118G53, PONKHI CHETIA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117K84, SANGHAMITRA KHOUND, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117S11, MUKTAR KUMAR SAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 29
+Zone4, C117V86, ANANTA SONOWAL, null, false, PH, null, null, null, null, null, null, false, 31, 30, 29
+Zone4, C106W36, BIKASH KHANIKAR, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C116Y96, HIROK JYOTI DOLEY, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117D69, RICHA MONI GOGOI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C104D95, GITARTHA NATH, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone3, C118A96, NOUMAN, null, true, CY, null, null, null, null, null, null, false, 19, 19, 20
+Zone4, C110J75, TOTHAGOT BHATTACHARYYA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C110U77, BICKY HAZARIKA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C121K31, NASRIN RAHMAN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C119V44, MRIGANKA MOHAN GOSWAMI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118G44, IBRAHIM HUSSAIN, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C106G28, ARINDOM PHUKAN, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C112H17, UDIT KUMAR DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C117M74, MONIKA SHARMA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone3, C118Y37, KUSHAGRA RAI, null, true, CY, null, null, null, null, null, null, false, 18, 18, 20
+Zone4, C119R80, AVILEKH BARUAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 1
+Zone4, C118G22, AROBINDA KAKOTI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C118V34, SANJAY KRISHNA BHUYAN, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C104J41, MADHURYA MOHAN HAZARIKA, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C120D66, ANANDA SARMAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118C37, UDINA BHUYAN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123X80, RITUPAN HATIMURIA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118F70, KAJAL GHOSH, null, false, GG, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116R92, BIKOSHITA PORASHAR, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C105R14, ARINDOM SONOWAL, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C116B44, JOGAT GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C119V22, BITHIKA BORAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C108Z58, MUNTI KACHARI, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117U26, DEEPSIKHA GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117R32, ASHA KONWAR, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C107K64, NANDITA GOGOI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C109P98, ANKUR RAJ GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116Z99, CHIRANJIB RAJKONWAR, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C117R45, BHARGOB GOGOI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116J89, AMAR NATH SAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118Q79, KASMITA CHETIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C117W72, RUPAM KALITA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 29
+Zone4, C117X47, PINAK PANI SAIKIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C107J43, RAJIV GUPTA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C121J13, GAYATRI BHATTACHARYYA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118Z79, SAURAV GOGOI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C119E86, AKAGHNI BORGOHAIN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 27
+Zone4, C119E89, GAYATREE BORA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C100X35, JYOTISHMAN KAISHYOP, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C118Q17, ABHIJIT GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C106Z65, SUBHAM KUMAR GUPTA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C116N25, ROHIT PRAKASH TIWARI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 33
+Zone4, C123P33, MANASH PROTIM CHETIA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C118Z65, BISWAJIT ROY, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C109Y62, DEEPJYOTI GOHAIN, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C119M58, DARSHANA CHETIA, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C124H94, PALLAB BORUAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 2
+Zone4, C118E63, JNYANASHREE DARABDHARA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C119F62, JIMI DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117H34, JEIBA GULSON NASER, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C105R23, MISHMI PAUL, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone3, C101F44, GANGA ARORA, null, true, CY, null, null, null, null, null, null, false, 20, 20, 18
+Zone4, C117B52, ABHINAV BORA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C116X23, BORSHALI DAS, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C119X67, AMIT BADONI, null, true, MA, null, null, null, null, null, null, false, 18, 27, 20
+Zone4, C115T99, JOYSHIL TAMULY, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C127A94, SIDDHARTHA SANKAR BORA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C121B19, DURLOVE SAIKIA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C120B22, PRASANTA KUMAR DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C121C20, HEMASHREE DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C118C78, MAYUR PRATIM BARUAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C121J63, DEVASRI DAS, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123X77, KASHYAP JYOTI BORAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C121G84, BERTILLA BARLA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C115Z17, INDUMONI GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 18
+Zone4, C121Y97, ANUSUYA BORKOTOKY, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C124H56, NAZIBA PARWEEN, null, false, PH, null, null, null, null, null, null, false, 31, 30, 27
+Zone4, C127Q78, PINKY DAS, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123F91, ARUNAV GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C112D80, CHITRALEKHA DUARAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C121Z15, PANKAJ KALITA, null, false, GG, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C108C58, KIRANJYOTI SONOWAL, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C121Y53, AMLAN JYOTI GOGOI, null, false, GG, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C122G82, SACHIN SHARMA, null, true, CY, null, null, null, null, null, null, false, 18, 21, 19
+Zone4, C121N85, MANASH JYOTI SAIKIA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 1
+Zone4, C122J20, PRAGATI HANDIQUE, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C113R80, SUGRIV CHOWBEY, null, false, PH, null, null, null, null, null, null, false, 31, 30, 41
+Zone4, C117C99, PRACHURJYA BORTHAKUR, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C117Z69, SAURAV KUMAR, null, true, CY, null, null, null, null, null, null, false, 18, 27, 20
+Zone4, C119C97, NAYANA HAZARIKA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118Y83, MUSARRAT ANJUM, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C107M94, DONALD GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C111H25, PRATIKSHIT CHOWDHURY, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C116J79, PRANAMI DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone3, C118P75, MANEESH KUMAR UPADHYAY, null, true, PH, null, null, null, null, null, null, false, 20, 18, 20
+Zone4, C116Q98, HEMRAJ THAPA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C118E70, DEBASISH BORUAH, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C117K41, JAKULINA BURAGOHAIN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C105R39, JYOTISHKA GOURAV BORA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C118X74, RITURAJ BORA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C120R24, CHAPUT CHAKMA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 27
+Zone4, C118E59, PINAZ PARBEEN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C125C79, SAURAV HAZARIKA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C123C86, NAYANJYOTI GOHAIN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C126E93, JAY DEEP MILI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C109K53, MUNMI BORAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C120E98, ANIL TIMSINA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C124N37, HIMADREE DAS, null, false, BL, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C109A89, AMLENDU KUMAR, null, true, PH, null, null, null, null, null, null, false, 20, 18, 20
+Zone4, C121V79, SWADHIN CHETIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C120P65, KAMAL DEEP NANDI, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123E77, MUNU BORAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C126A57, PANKAJ JYOTI BURAGOHAIN, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C107T18, JISUPAN BURA GOHAIN, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone3, C122K76, SONALI GUPTA, null, true, BT, null, null, null, null, null, null, false, 25, 27, 18
+Zone4, C122G75, SAMIRAN GOSWAMI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C124H82, PRAJNYAJYOTI DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C125T89, RINKI BORA, null, false, BL, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C125D81, HIMANGSHU SEKHAR HAZARIKA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C117F86, DHRUBA JYOTI SAIKIA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C122Y21, PARIKHIT MUDOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C124F34, JITUL BARUAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 27
+Zone3, C123A40, RITU SOAM, null, true, PH, null, null, null, null, null, null, false, 20, 18, 63
+Zone4, C124M57, DEVALAKSHMI SAIKIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C124E91, POLAKSHI BOKOTIAL, null, false, BL, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C120Q11, KUBER KANCHAN GOGOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C114K14, PRANJAL MUDOI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C122C12, KAMAL BASUMATARY, null, false, BL, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123X56, CHINMOY NEOG, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C124M78, SUNAKSHI BORA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C127J25, BANANI BHATTACHARJEE, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C127Q66, POOJA GUPTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C104D64, SUNITA PAUL, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C114M25, KISHOR SARMAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C124P95, ABHIJIT KONWAR, null, false, BL, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C127Z99, MADHUJYA PROTIM PHUKAN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C124U71, PRIYA MECH BARUAH, null, false, GG, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C118R18, VASIULLA, null, true, PH, null, null, null, null, null, null, false, 18, 20, 62
+Zone4, C125Y76, ANUSMITA PHUKAN, null, false, BL, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C124S94, JISU KUMAR DOWARAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C100J42, MUKUL KUMAR GANDHI, null, true, BL, BT, null, null, null, null, null, false, 18, 20, 21
+Zone4, C115S48, PRAKASH CHETRY, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C107C80, RAJAN KUMAR, null, true, BT, null, null, null, null, null, null, false, 18, 27, 20
+Zone4, C107K91, SURAJIT KUMAR MECH, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C127F61, IRFAN HASHIB, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone3, C120D69, SAWAI SINGH, null, true, MA, null, null, null, null, null, null, false, 26, 24, 18
+Zone4, C126R32, NIKITA BORTHAKUR, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C109B40, SAHTAZ AHMED, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C128W69, PARTHA PROTIM CHAMUAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 27
+Zone4, C108M41, AKASH BORUAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C126N39, AMLANJIT KURMI, null, false, GG, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C126V68, SAMIRAN SAIKIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C105H53, DONDINATH DEORI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C126X99, NIRANGKUSH BORAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C106J93, KARAN GAUTAM, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C106B89, DIPANKAR DEWANJEE, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C114T28, SABIRA NISSA, null, false, BL, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C115T31, SAUVIK KASHYAP, null, false, CY, null, null, null, null, null, null, false, 31, 30, 27
+Zone4, C128S41, AKASH BARUAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C105G85, DHRUBAJYOTI SAIKIA, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C125N12, LIDIYA DEB, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C106G46, HARI M R, null, false, PH, null, null, null, null, null, null, false, 31, 30, 51
+Zone3, C117E10, VEER PAL, null, true, MA, null, null, null, null, null, null, false, 20, 18, 27
+Zone4, C116S27, SUBASH GOWALA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C127V58, MANOB JYOTI SAIKIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C108P46, PRIYANKA DAS, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C108P37, ANKIT DAS, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123Y32, SIDDHARTH RASAILY, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C121F49, JHARANA PHUKAN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C124H66, NEELAM SARMAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 2
+Zone4, C124Z72, RUPJYOTI DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C127G42, TRISHNA RAHANG, null, false, BL, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123C75, BIKASH HAZARIKA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 9
+Zone4, C126R60, KRISHNA MECH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C127B73, SIVA PRASAD HAZARIKA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C108X35, MEGHALI BORKOTOKY, null, false, BL, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C123C28, SAMIRAN DUTTA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C123A36, PRIYAKHI BORA, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C124M67, BHASKAR JYOTI BORAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 44
+Zone4, C125N11, NUPUR BARUAH, null, false, PH, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C100Q33, VIKAS KUMAR, null, true, MA, null, null, null, null, null, null, false, 20, 18, 63
+Zone3, C125Y15, BHAWNA SHARMA, null, true, MA, null, null, null, null, null, null, false, 18, 19, 21
+Zone4, C120V83, NIRANJAN KUMAR PRAJAPATI, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C119S40, ARUNAV HAZARIKA, null, false, GG, null, null, null, null, null, null, false, 31, 30, 34
+Zone4, C128E37, SARMISTHA BURAGOHAIN, null, false, CY, null, null, null, null, null, null, false, 31, 30, 44
+Zone5, C128U50, VIKASH SHUKLA, null, false, CY, null, null, null, null, null, null, false, 41, 36, 40
+Zone5, C128T20, PRAGYA PATEL, null, false, CY, null, null, null, null, null, null, false, 38, 41, 23
+Zone4, C126G29, KRIPA DRISTI DIHINGIA, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone5, C108V39, NEHA SINGH, null, false, MA, null, null, null, null, null, null, false, 41, 40, 18
+Zone4, C106B49, PRIYAM NAYANA NEOG, null, false, GG, null, null, null, null, null, null, false, 31, 30, 44
+Zone5, C122C67, TRIPTI AGRAWAL, null, false, MA, null, null, null, null, null, null, false, 40, 39, 41
+Zone4, C111G73, PRIYAM BORAH, null, false, CY, null, null, null, null, null, null, false, 31, 30, 34
+Zone3, C125A53, JEEVAK MANIRAM, null, true, PH, null, null, null, null, null, null, false, 18, 22, 19
