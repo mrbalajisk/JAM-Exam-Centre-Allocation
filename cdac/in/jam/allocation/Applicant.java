@@ -17,6 +17,7 @@ public class Applicant{
 	Map<String, String> registrationId;
 	Map<String, Boolean> isAllocated;
 	Centre centre;
+	City city;
 	Session session;
 	String originalFirstChoice;
 	int allotedChoice;
@@ -56,17 +57,18 @@ public class Applicant{
 		
 		this.centre = null;
 		this.session = null;	
+		this.city = null;
 		this.allotedChoice = -1;	
 	}
 
 	static void header(){
-		System.out.println("Zone, Enrollment, Name, Gender, PwD-Status, CentreCode, PaperCode1, PaperCode2, registrationId1, registrationId2, Session1-date, Session1-time,Session2-time, Provisional-Status, City-Choice1, City-Choice2, City-Choice3, OriginalFirstChoice;");
+		System.out.println("Zone, Enrollment, Name, Gender, PwD-Status, CentreCode, Allocated-City, PaperCode1, PaperCode2, registrationId1, registrationId2, Session1-date, Session1-time,Session2-time, Provisional-Status, City-Choice1, City-Choice2, City-Choice3, Original-FirstChoice;");
 	}
 
 	void print(){
 		if( centre != null )
-			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", "+gender+", "+isPwD+", "+centre.centreCode+", "+paperCode1+", "+paperCode2+", "+registrationId.get( paperCode1 )+", "+registrationId.get( paperCode2 )+", "+session.dateTime.get("1").date+", "+session.dateTime.get("1").time+", "+session.dateTime.get("2").time+", false"+", "+choices[0]+", "+choices[1]+", "+choices[2]+", "+originalFirstChoice);
+			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", "+gender+", "+isPwD+", "+centre.centreCode+", "+city.cityCode+", "+paperCode1+", "+paperCode2+", "+registrationId.get( paperCode1 )+", "+registrationId.get( paperCode2 )+", "+session.dateTime.get("1").date+", "+session.dateTime.get("1").time+", "+session.dateTime.get("2").time+", false"+", "+choices[0]+", "+choices[1]+", "+choices[2]+", "+originalFirstChoice);
 		else
-			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", "+gender+", "+isPwD+", null, "+paperCode1+", "+paperCode2+", null, null, null, null, null, false, "+choices[0]+", "+choices[1]+", "+choices[2]+", "+originalFirstChoice );
+			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", "+gender+", "+isPwD+", null, null, "+paperCode1+", "+paperCode2+", null, null, null, null, null, false, "+choices[0]+", "+choices[1]+", "+choices[2]+", "+originalFirstChoice );
 	}
 } 

@@ -40,6 +40,7 @@ public class City{
 	}
 
 	void allocate(){
+
 		List<Applicant> doublePaper = new ArrayList<Applicant>();
 		List<Applicant> pwd = new ArrayList<Applicant>();
 		List<Applicant> singlePaper = new ArrayList<Applicant>();
@@ -108,7 +109,6 @@ public class City{
 		}
 
 		for(Applicant applicant: applicants ){
-
 			Set<String> centreCodes = centreMap.keySet();
 			for(String centreCode: centreCodes){
 
@@ -124,6 +124,7 @@ public class City{
 
 							if(( centre.sessionMap.get("1").capacity - centre.sessionMap.get("1").allocated ) > 0 																					&& ( centre.sessionMap.get("2").capacity - centre.sessionMap.get("2").allocated ) > 0 ){			
 
+									applicant.city = this;
 									session =  sessionMap.get( "1" );
 									centre.sessionMap.get( session.sessionId ).allocated++;
 
@@ -145,6 +146,8 @@ public class City{
 							session = sessionMap.get( Allocator.paperSessionMap.get( applicant.paperCode1 ) );
 
 							if( ( centre.sessionMap.get( session.sessionId ).capacity - centre.sessionMap.get( session.sessionId ).allocated ) > 0){
+
+								applicant.city = this;
 
 								applicant.centre =  centre;	
 								centre.sessionMap.get( session.sessionId ).allocated++;
