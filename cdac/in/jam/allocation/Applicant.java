@@ -15,7 +15,7 @@ public class Applicant{
 	String[] choices;
 
 	Map<String, String> registrationId;
-	Map<String, String> isAllocated;
+	Map<String, Boolean> isAllocated;
 	Centre centre;
 	Session session;
 	String originalFirstChoice;
@@ -50,9 +50,9 @@ public class Applicant{
 		this.registrationId.put( this.paperCode1, null );	
 		this.registrationId.put( this.paperCode2, null );		
 
-		this.isAllocated = new LinkedHashMap<String, String>();
-		this.isAllocated.put( this.paperCode1, "false");
-		this.isAllocated.put( this.paperCode2, "false");
+		this.isAllocated = new LinkedHashMap<String, Boolean>();
+		this.isAllocated.put( this.paperCode1, new Boolean(false) );
+		this.isAllocated.put( this.paperCode2, new Boolean(false) );
 		
 		this.centre = null;
 		this.session = null;	

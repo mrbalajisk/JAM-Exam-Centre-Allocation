@@ -350,13 +350,14 @@ public class Allocator{
 
 						if( applicant.paperCode1 != null && applicant.paperCode2 != null ){
 
-							if( applicant.isAllocated.get( applicant.paperCode1 ).equals("true")  && applicant.isAllocated.get( applicant.paperCode2).equals("true") )
+							if( applicant.isAllocated.get( applicant.paperCode1 ).booleanValue()  && applicant.isAllocated.get( applicant.paperCode2).booleanValue() )
 										continue;
-						}else if ( applicant.paperCode1 != null && applicant.isAllocated.get( applicant.paperCode1 ).equals("true") ){
+						}else if ( applicant.paperCode1 != null && applicant.isAllocated.get( applicant.paperCode1 ).booleanValue() ){
 										continue;
 						}
 
 						String cityCode = applicant.choices[ choiceNumber ];			
+
 						City city = cityMap.get( cityCode );
 
 						if( city == null){
@@ -385,7 +386,7 @@ public class Allocator{
 
 										paper.applicants.add( applicant );
 
-										applicant.isAllocated.put( paper.paperCode, "true" );	
+										applicant.isAllocated.put( paper.paperCode, new Boolean(true) );	
 										city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
 
 										city.sessionMap.get( session2 ).allocated++;
@@ -395,7 +396,7 @@ public class Allocator{
 												paper = new Paper( applicant.paperCode2, 0 );
 										}
 										city.sessionMap.get( session2 ).paperMap.put( applicant.paperCode2, paper );	
-										applicant.isAllocated.put( paper.paperCode, "true" );	
+										applicant.isAllocated.put( paper.paperCode, new Boolean(true) );	
 										applicant.allotedChoice = ( choiceNumber + 1);
 
 										if( applicant.isPwD ){
@@ -422,7 +423,7 @@ public class Allocator{
 
 										paper.applicants.add( applicant );
 										city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
-										applicant.isAllocated.put( paper.paperCode, "true" );	
+										applicant.isAllocated.put( paper.paperCode, new Boolean(true) );	
 										applicant.allotedChoice = ( choiceNumber + 1);
 
 										if( applicant.isPwD ){
@@ -492,12 +493,13 @@ public class Allocator{
 
 		void allocate(){
 			
-			System.out.println( "PWD Applicant Allocation: ");
 			allocate( PwDApplicants, 0, false );
-			System.out.println( "PWD Applicant done");
-
 			allocate( twoPaperApplicants, 0, true );
 			allocate( applicants, 0, true );
+
+			allocate( PwDApplicants, 0, false );
+			allocate( twoPaperApplicants, 0, false );
+			allocate( applicants, 0, false );
 
 			cityChangeUpdate( applicants );
 
