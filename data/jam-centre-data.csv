@@ -1,5 +1,4 @@
-Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,Usable Nodes,,PwD Y/N
-,,,,,,,,,,,FN,AN,
+Zone ID,Zone,CDAC ID,JAM Code,Name,Add1,Add2,Add3,PinCode,City,State,FN, AN,PwD Y/N
 1,IISc,1,101,JSS Academy of Technical Education,"Uttarahalli,",Kengeri Road,Bengaluru,560060,Bengaluru,Karnataka,193,193,Yes
 1,IISc,1,102,SJB Institute of Technology,"No 67, BGS Health  and  Education City, ","Uttarahalli Road, Kengeri",Bengaluru,560060,Bengaluru,Karnataka,200,200,Yes
 1,IISc,1,103,AMC Engineering College,"18th Kilometer,",Bannerghatta road,Bengaluru,560083,Bengaluru,Karnataka,300,296,No
