@@ -24,7 +24,8 @@ public class Allocator{
 		static List<Applicant> allocated;
 
 		static Map<String, String> paperSessionMap;
-		static Map<String, String> cityChoiceUpdate;
+		static Map<String, String> applicantCityChange;
+		static Map<String, String> cityChange;
 
 		static{
 
@@ -39,7 +40,8 @@ public class Allocator{
 
 				zoneMap = new TreeMap<String, Zone>(); 
 				cityMap = new TreeMap<String, City>();
-				cityChoiceUpdate = new TreeMap<String, String>();
+				applicantCityChange = new TreeMap<String, String>();
+				cityChange = new TreeMap<String, String>();
 				paperSessionMap = new TreeMap<String, String>();
 
 				paperSessionMap.put("MA","1");
@@ -51,7 +53,7 @@ public class Allocator{
 				paperSessionMap.put("CY","2");
 		}
 
-		void readCityChocieUpdate( String filename, boolean withHeader  ){
+		void readCityChange( String filename, boolean withHeader  ){
 
 				if( filename == null || filename.trim().length() == 0)	
 					return;
@@ -69,10 +71,47 @@ public class Allocator{
 									continue;
 							}
 							String[] tk = line.split(",",-1);
-							cityChoiceUpdate.put(tk[0].trim(), tk[1].trim() );					
+							cityChange.put(tk[0].trim(), tk[1].trim() );					
 							count++;
 						}
 						System.out.println("Number of City-Change Request Read: "+count);
+						System.err.println("Number of City-Change Request Read: "+count);
+				}catch(Exception e){
+						e.printStackTrace();	
+				}finally{
+						if( br != null){
+								try{	
+										br.close();
+								}catch(Exception e){
+										e.printStackTrace();	
+								}		
+						}		
+				}		
+		}
+		
+
+		void readCandidateCityChocieUpdate( String filename, boolean withHeader  ){
+
+				if( filename == null || filename.trim().length() == 0)	
+					return;
+
+				BufferedReader br =  null; 
+				try{
+						br = new BufferedReader( new FileReader(new File(filename) ) );	
+						String line = null;	
+						boolean header = true;
+						int count = 0;
+
+						while( ( line =  br.readLine() ) != null ){
+							if( withHeader ){
+									withHeader = false; 
+									continue;
+							}
+							String[] tk = line.split(",",-1);
+							applicantCityChange.put(tk[0].trim(), tk[1].trim() );					
+							count++;
+						}
+						System.out.println("Number of Candidate-City-Change Request Read: "+count);
 						System.err.println("Number of City-Change Request Read: "+count);
 				}catch(Exception e){
 						e.printStackTrace();	
@@ -110,12 +149,12 @@ public class Allocator{
 								if( tk.length < 10)	
 										continue;
 
-								String newChoice = cityChoiceUpdate.get( tk[0].trim() );
+								String newChoice = applicantCityChange.get( tk[0].trim() );
 								Applicant applicant = null;
 								if( newChoice != null){
-									applicant = new Applicant( tk[0].trim(), tk[1].trim(), tk[2].trim(), tk[3].trim(), tk[4].trim(), tk[5].trim(), tk[6].trim(), newChoice, tk[8].trim(), tk[9].trim(), tk[10].trim() );
+									applicant = new Applicant( tk[0].trim(), tk[1].trim(), tk[2].trim(), tk[3].trim(), tk[4].trim(), tk[5].trim(), tk[6].trim(), newChoice, tk[8].trim(), tk[9].trim(), tk[10].trim(), tk[7].trim() );
 								}else{
-									applicant = new Applicant( tk[0].trim(), tk[1].trim(), tk[2].trim(), tk[3].trim(), tk[4].trim(), tk[5].trim(), tk[6].trim(), tk[7].trim(), tk[8].trim(), tk[9].trim(), tk[10].trim() );
+									applicant = new Applicant( tk[0].trim(), tk[1].trim(), tk[2].trim(), tk[3].trim(), tk[4].trim(), tk[5].trim(), tk[6].trim(), tk[7].trim(), tk[8].trim(), tk[9].trim(), tk[10].trim(), tk[7].trim() );
 								}
 
 								applicants.add( applicant );	
@@ -298,12 +337,16 @@ public class Allocator{
 
 		}
 
-		void allocate(List<Applicant> applicants, int choiceNumber){
+		void allocate(List<Applicant> applicants, int choiceNumber, boolean onlyFemaleForCity){
 
 				int count = 0;
 				int pwdCount = 0;
 
 				for(Applicant applicant: applicants){
+
+
+						if( onlyFemaleForCity && ( cityChange.get( applicant.choices[ choiceNumber ] ) != null && applicant.gender.equals("Male") ) )	
+							continue;
 
 						if( applicant.paperCode1 != null && applicant.paperCode2 != null ){
 
@@ -433,11 +476,35 @@ public class Allocator{
 				System.out.println("Allocated candidate "+allocated.size());
 		}
 
-		void allocate(){
+		void cityChangeUpdate(List<Applicant> applicants){
 
-			allocate( PwDApplicants, 0 );
-			allocate( twoPaperApplicants, 0 );
-			allocate( applicants, 0 );
+			for(Applicant applicant: applicants){
+
+				if( applicant.isAllocated.get( applicant.paperCode1  ).equals("true") ){
+					continue;
+				}else {
+					String newChoice = cityChange.get( applicant.choices[0] );
+					if( newChoice != null )
+						applicant.choices[0] = newChoice;
+				}
+			}
+		}
+
+		void allocate(){
+			
+			System.out.println( "PWD Applicant Allocation: ");
+			allocate( PwDApplicants, 0, false );
+			System.out.println( "PWD Applicant done");
+
+			allocate( twoPaperApplicants, 0, true );
+			allocate( applicants, 0, true );
+
+			cityChangeUpdate( applicants );
+
+			allocate( PwDApplicants, 0, false );
+			allocate( twoPaperApplicants, 0, false );
+			allocate( applicants, 0, false );
+			
 		}
 
 		public static void main(String[] args){
@@ -445,11 +512,10 @@ public class Allocator{
 				try{
 
 						Allocator allocator = new Allocator();
-						allocator.readCityChocieUpdate("./data/city-change.csv", true );
+						allocator.readCandidateCityChocieUpdate("./data/candidate-city-change.csv", true );
+						allocator.readCityChange("./data/city-change.csv", true );
 						allocator.readCentres("./data/jam-centre-data.csv", true );
-						allocator.readCentres("./data/jam-centre-data-30.csv", true );
 						allocator.readApplicants("./data/applicant20151126.csv", true );
-						//allocator.print();
 						allocator.readConstraints("");
 						allocator.allocate();
 						allocator.centreAllocation();

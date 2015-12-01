@@ -18,9 +18,10 @@ public class Applicant{
 	Map<String, String> isAllocated;
 	Centre centre;
 	Session session;
+	String originalFirstChoice;
 	int allotedChoice;
 
-	Applicant(String enrollment, String name, String gender, String isPD, String isScribe, String paperCode1, String paperCode2, String choice1, String choice2, String choice3, String zoneId){
+	Applicant(String enrollment, String name, String gender, String isPD, String isScribe, String paperCode1, String paperCode2, String choice1, String choice2, String choice3, String zoneId, String originalFirstChoice){
 
 		this.enrollment = enrollment;
 		this.name = name;
@@ -42,6 +43,8 @@ public class Applicant{
 		this.choices[0] = choice1;
 		this.choices[1] = choice2;
 		this.choices[2] = choice3;
+
+		this.originalFirstChoice = originalFirstChoice;
 		
 		this.registrationId = new LinkedHashMap<String, String>();
 		this.registrationId.put( this.paperCode1, null );	
@@ -57,13 +60,13 @@ public class Applicant{
 	}
 
 	static void header(){
-		System.out.println("Zone, Enrollment, Name, CenterCode, PwD-Status, PaperCode1, PaperCode2, registration-Id1, registration-Id1, Session1-date, Session1-time,Session2-time, Provisional-Status, City-Choice1, City-Choice2, City-Choice3");
+		System.out.println("Zone, Enrollment, Name, Gender, PwD-Status, CentreCode, PaperCode1, PaperCode2, registrationId1, registrationId2, Session1-date, Session1-time,Session2-time, Provisional-Status, City-Choice1, City-Choice2, City-Choice3, OriginalFirstChoice;");
 	}
 
 	void print(){
 		if( centre != null )
-			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", "+centre.centreCode+", "+isPwD+", "+paperCode1+", "+paperCode2+", "+registrationId.get( paperCode1 )+", "+registrationId.get( paperCode2 )+", "+session.dateTime.get("1").date+", "+session.dateTime.get("1").time+", "+session.dateTime.get("2").time+", false"+", "+choices[0]+", "+choices[1]+", "+choices[2]);
+			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", "+gender+", "+isPwD+", "+centre.centreCode+", "+paperCode1+", "+paperCode2+", "+registrationId.get( paperCode1 )+", "+registrationId.get( paperCode2 )+", "+session.dateTime.get("1").date+", "+session.dateTime.get("1").time+", "+session.dateTime.get("2").time+", false"+", "+choices[0]+", "+choices[1]+", "+choices[2]+", "+originalFirstChoice);
 		else
-			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", null, "+isPwD+", "+paperCode1+", "+paperCode2+", null, null, null, null, null, false, "+choices[0]+", "+choices[1]+", "+choices[2] );
+			System.out.println("Zone"+zoneId+", "+enrollment+", "+name+", "+gender+", "+isPwD+", null, "+paperCode1+", "+paperCode2+", null, null, null, null, null, false, "+choices[0]+", "+choices[1]+", "+choices[2]+", "+originalFirstChoice );
 	}
 } 
