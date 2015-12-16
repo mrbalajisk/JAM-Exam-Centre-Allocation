@@ -41988,7 +41988,7 @@
  C127T95, NARMADHA DEVI.J, Female, f, f, CY,, 50, 51, 7, 7
  C127D77, MUKESH KUMAR, Male, f, f, MA,, 24, 26, 18, 3
  C128B28, BHASKAR KUMAR BRAHMA, Male, f, f, CY,, 30, 31, 18, 4
- C127U39, U RENUKACHOWDARY, Female, f, f, MA,, 1, 6, 2, 1
+ C127U39, U RENUKACHOWDARY, Female, f, f, MA, CY, 1, 6, 2, 1
  C126K38, GUPTA LAVKESH GOPAL, Male, f, f, PH,, 12, 16, 15, 2
  C127J53, NITUPAN MEDHI, Male, f, f, PH,, 30, 31, 44, 4
  C117U81, M.K.PRIYA, Female, f, f, PH,, 52, 55, 54, 7
@@ -45412,9 +45412,9 @@
  C126A44, PRIYANKA, Female, f, f, MA,, 60, 58, 59, 8
  C127T43, POOJA, Female, f, f, CY,, 59, 62, 22, 8
  C128S53, SHIVANI, Female, f, f, CY,, 57, 63, 18, 8
- C102T20, DITIPRIYA MALLICK, Female, f, f, BL,, 44, 43, 28, 6
+ C102T20, DITIPRIYA MALLICK, Female, f, f, BL,BT, 44, 43, 28, 6
  C107W59, SASMITA RATHA, Female, f, f, MS,, 42, 43, 44, 6
- C107X71, SASMITA RATHA, Female, f, f, MA,, 42, 43, 44, 6
+ C107X71, SASMITA RATHA, Female, f, f, MA,MS, 42, 43, 44, 6
  C116J26, PRIYANKA SAHA, Female, f, f, CY,, 44, 43, 46, 6
  C121C16, PRIYANKA SAHOO, Female, f, f, BL,, 42, 44, 43, 6
  C121U32, DITIPRIYA MALLICK, Female, f, f, BT,, 44, 43, 28, 6
@@ -45432,7 +45432,7 @@
  C125W28, RAUT SHITAL RAMDAS, Female, f, f, MA,, 16, 15, 12, 2
  C126W53, RAUT SHITAL RAMDAS, Female, f, f, CY,, 16, 15, 12, 2
  C128C15, POOJA, Female, f, f, PH, CY, 11, 16, 1, 2
- C105K87, TANUJ CHAKRABORTY, Male, f, f, BL,, 1, 2, 7, 1
+ C105K87, TANUJ CHAKRABORTY, Male, f, f, BL, BT, 1, 2, 7, 1
  C112P79, MEENU R NAIR, Female, f, f, PH,, 3, 4, 53, 1
  C118D96, NITHYA K, Female, f, f, PH,, 6, 5, 8, 1
  C118E17, NEETHU K, Female, f, f, PH,, 6, 5, 8, 1
@@ -45447,7 +45447,7 @@
  C102C32, HIMANSHU SHARMA, Male, f, f, BL, BT, 24, 26, 27, 3
  C102D43, HIMANSHU, Male, f, f, PH,, 27, 18, 24, 3
  C102F91, ANJALI, Female, f, f, CY,, 20, 27, 18, 3
- C104D62, SAUMYA BHATT, Female, f, f, BL,, 27, 20, 18, 3
+ C104D62, SAUMYA BHATT, Female, f, f, BL, BT, 27, 20, 18, 3
  C104S98, SACHIN, Male, f, f, MA,, 18, 27, 21, 3
  C107H37, KIRTI SHARMA, Female, f, f, CY,, 27, 18, 21, 3
  C107R42, VAISHALI AGGARWAL, Female, f, f, MS,, 18, 27, 62, 3
@@ -45457,7 +45457,7 @@
  C111J81, PRITI SHARMA, Female, f, f, MA,, 18, 19, 21, 3
  C111Z56, PREETI, Female, f, f, MA,, 22, 27, 18, 3
  C114J89, SUMAN, Female, f, f, CY,, 22, 19, 59, 3
- C114K27, VAISHALI AGGARWAL, Female, f, f, MA,, 18, 27, 62, 3
+ C114K27, VAISHALI AGGARWAL, Female, f, f, MA,MS, 18, 27, 62, 3
  C115W36, KIRAN BALA, Female, f, f, PH, CY, 27, 21, 10, 3
  C116W12, POONAM, Female, f, f, CY,, 22, 19, 18, 3
  C118K33, NAVEEN KHANDAL, Male, f, f, MA,, 24, 27, 26, 3
@@ -45480,11 +45480,11 @@
  C127Y61, NISHA, Female, f, f, BL,, 24, 21, 27, 3
  C100Y48, PRAVEEN KUMAR, Male, f, f, MA,, 27, 18, 35, 3
  C101K45, MONIKA YADAV, Female, f, f, MA,, 21, 18, 62, 3
- C101N39, RENU, Female, f, f, MA,, 18, 27, 19, 3
+ C101N39, RENU, Female, f, f, MA,MS, 18, 27, 19, 3
  C101P32, RINKI, Female, f, f, CY,, 27, 21, 18, 3
  C103K87, JYOTI, Female, f, f, MA, MS, 27, 18, 21, 3
  C104N79, SHREYA SHARMA, Female, f, f, BT,, 27, 18, 20, 3
- C105H31, SHRUTI PANWAR, Female, f, f, BL,, 24, 27, 18, 3
+ C105H31, SHRUTI PANWAR, Female, f, f, BL,BT, 24, 27, 18, 3
  C106F91, PRAVEEN KUMAR VISHWAKARMA, Male, f, f, PH,, 27, 18, 9, 3
  C106M71, PRIYANKA, Female, f, f, CY,, 27, 21, 18, 3
  C106R74, RENU, Female, f, f, MS,, 18, 27, 19, 3
@@ -45502,7 +45502,7 @@
  C112G28, PRITI, Female, f, f, MA,, 24, 21, 27, 3
  C112H64, PRIYANKA YADAV, Female, f, f, CY,, 27, 18, 21, 3
  C112N29, NITESH KUMAR, Male, f, f, CY,, 27, 18, 62, 3
- C113A10, KARUNA, Female, f, f, MA,, 22, 20, 59, 3
+ C113A10, KARUNA, Female, f, f, MA, CY, 22, 20, 59, 3
  C113T98, RAVI, Male, f, f, MA,, 27, 21, 22, 3
  C114E41, KRISHMA RANI, Female, f, f, CY,, 22, 21, 27, 3
  C114J90, MONIKA, Female, f, f, PH,, 22, 27, 59, 3
@@ -45529,9 +45529,9 @@
  C124S61, RINKI GARG, Female, f, f, BL,, 22, 21, 27, 3
  C125Z77, MONIKA, Female, f, f, BL,, 22, 27, 59, 3
  C125G21, ROHIT KUMAR, Male, f, f, BL, BT, 22, 21, 27, 3
- C125Z78, REENA YADAV, Female, f, f, BL,, 18, 21, 24, 3
+ C125Z78, REENA YADAV, Female, f, f, BL,BT, 18, 21, 24, 3
  C126H55, MEENAKSHI, Female, f, f, BL, BT, 27, 18, 62, 3
- C127E93, SHREYA SHARMA, Female, f, f, BL,, 18, 20, 21, 3
+ C127E93, SHREYA SHARMA, Female, f, f, BL, BT, 18, 20, 21, 3
  C127W39, RENU, Female, f, f, CY,, 27, 18, 22, 3
  C127W49, ASHA RANI, Female, f, f, CY,, 27, 18, 20, 3
  C128M57, SHRUTI PANWAR, Female, f, f, BT,, 24, 27, 18, 3
@@ -45555,8 +45555,8 @@
  C109N81, SHATABDI SEN, Female, f, f, BT,, 49, 50, 1, 7
  C110C90, KOMAL, Female, f, f, PH,, 19, 18, 21, 3
  C110N29, RAHUL, Male, f, f, BL, BT, 18, 20, 19, 3
- C111C18, NEHA GUPTA, Female, f, f, BL,, 24, 27, 26, 3
- C112G12, CHARUPRIYA SINGH, Female, f, f, BL,, 41, 36, 33, 5
+ C111C18, NEHA GUPTA, Female, f, f, BL,BT, 24, 27, 26, 3
+ C112G12, CHARUPRIYA SINGH, Female, f, f, BL, BT, 41, 36, 33, 5
  C112S13, MEGHA NARUKA, Female, f, f, CY,, 27, 18, 21, 3
  C113Q30, SNEHA, Female, f, f, PH,, 27, 21, 18, 3
  C113V79, PRIYANKA VIJAY LAHOTI, Female, f, f, MA, MS, 16, 15, 12, 2
@@ -45620,7 +45620,7 @@
  C105N88, MEGHA, Female, f, f, PH,, 27, 18, 59, 3
  C105T43, DEEPAK YADAV, Male, f, f, MA, MS, 27, 21, 18, 3
  C106R69, DEEPIKA, Female, f, f, MA,, 27, 18, 24, 3
- C106X82, SHWETA GUPTA, Female, f, f, BL,, 24, 27, 35, 3
+ C106X82, SHWETA GUPTA, Female, f, f, BL, BT, 24, 27, 35, 3
  C106Y86, DIVYA, Female, f, f, CY,, 27, 21, 20, 3
  C107F13, ANISHA RANA, Female, f, f, MA, MS, 27, 21, 62, 3
  C107G99, PRIYANKA GAUTAM, Female, f, f, PH,, 19, 27, 18, 3
@@ -45634,7 +45634,7 @@
  C108P72, JYOTI, Female, f, f, MA,, 27, 18, 59, 3
  C108R12, POONAM RANI, Female, f, f, MA,, 22, 27, 19, 3
  C110D45, KHUSBU, Female, f, f, MS,, 22, 27, 18, 3
- C110E51, KHUSBU, Female, f, f, PH,, 22, 27, 18, 3
+ C110E51, KHUSBU, Female, f, f, PH,MS, 22, 27, 18, 3
  C110P97, ANKIT KUMAR, Male, f, f, CY,, 27, 18, 21, 3
  C110W45, AARZOO, Female, f, f, CY,, 22, 27, 18, 3
  C111K78, RITU, Female, f, f, CY,, 22, 18, 21, 3

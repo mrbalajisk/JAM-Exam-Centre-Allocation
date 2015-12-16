@@ -27,7 +27,17 @@ public class Allocator{
 		static Map<String, String> applicantCityChange;
 		static Map<String, String> cityChange;
 
+		static Map<String, ArrayList<String>> changeCityCentre;
+		static Map<String, DuplicateInfo> duplicateList;
+		static List<String> notAllocateList;
+
+		static Map<String, Applicant> notAllocatedListApplicant;
+
 		static{
+				notAllocatedListApplicant = new TreeMap<String, Applicant>();
+				changeCityCentre = new TreeMap<String, ArrayList<String>>();
+				duplicateList = new TreeMap<String, DuplicateInfo>();
+				notAllocateList = new ArrayList<String>();
 
 				applicants = new ArrayList<Applicant>();
 				notAllocated = new ArrayList<Applicant>();
@@ -53,6 +63,36 @@ public class Allocator{
 				paperSessionMap.put("CY","2");
 		}
 
+		void readDuplicate(String filename, boolean withHeader){
+
+			if( filename == null || filename.trim().length() == 0)	
+				return;
+
+			BufferedReader br =  null; 
+			try{
+					br = new BufferedReader( new FileReader(new File(filename) ) );	
+					String line = null;	
+					boolean header = true;
+					int count = 0;
+
+					while( ( line =  br.readLine() ) != null ){
+						if( withHeader ){
+								withHeader = false; 
+							continue;
+						}
+						String[] tk = line.split(",", -1);
+						duplicateList.put( tk[0].trim(), new DuplicateInfo( tk[0].trim(), tk[1].trim(), tk[2].trim(), tk[3].trim() ) );
+						notAllocateList.add( tk[2].trim() );
+						count++;
+					}
+
+					System.err.println("Total duplicate read: "+count) ;
+				}catch(Exception e){
+					e.printStackTrace();
+				}	
+		     	
+		}
+
 		void readCityChange( String filename, boolean withHeader  ){
 
 				if( filename == null || filename.trim().length() == 0)	
@@ -71,11 +111,21 @@ public class Allocator{
 									continue;
 							}
 							String[] tk = line.split(",",-1);
+
 							cityChange.put(tk[0].trim(), tk[1].trim() );					
+
+							ArrayList<String> centres =  new ArrayList<String>();
+							String []cts = tk[2].trim().split("-", -1); 
+							for(String ct: cts){
+								centres.add( ct.trim() );
+							}
+							changeCityCentre.put( tk[1].trim(), centres );
+
 							count++;
 						}
 						System.out.println("Number of City-Change Request Read: "+count);
 						System.err.println("Number of City-Change Request Read: "+count);
+
 				}catch(Exception e){
 						e.printStackTrace();	
 				}finally{
@@ -226,19 +276,12 @@ public class Allocator{
 								String centerName = tk[4].trim();
 								String cityName = tk[9].trim();
 								String state = tk[10].trim();
-
-								List<String> sessions =  new ArrayList<String>();
+								List<Session> sessions =  new ArrayList<Session>();
 								int i = 11;
-
-								for(int j = 0; i < tk.length; i++, j++){
-
-										try{
-												int num = Integer.parseInt( tk[i].trim() );
-										}catch(Exception e){
-												break;
-										}	
-										sessions.add( j, tk[i].trim() );
-								}
+								sessions.add( new Session("1", Integer.parseInt( tk[i].trim() ), "February 7 2016 (Sunday)", "Forenoon") );
+								i++;
+								sessions.add( new Session("2", Integer.parseInt( tk[i].trim() ), "February 7 2016 (Sunday)", "Afternoon") );
+								i++;
 
 								String PwDFriendly = tk[i].trim();
 
@@ -256,25 +299,22 @@ public class Allocator{
 
 								Centre centre = new Centre( centerCode, centerName, sessions, PwDFriendly);
 
-								//System.out.println(zone.zoneId+", "+city.cityCode+", "+centre.centreCode);
-
 								city.centreMap.put( centerCode, centre );
 
 								/* City Session Capacity Calculation START */
 								i = 0;
+
 								for( int s = 1; i < sessions.size(); i++, s++){
 
 										Session session = city.sessionMap.get( s+"" );			
-
 										if( session == null ){
-												session = new Session( s+"", Integer.parseInt( sessions.get(i) ) );
+												session = new Session(s+"", sessions.get(i).capacity, sessions.get(i).date, sessions.get(i).sessionTime ) ;
 										}else{
-												session.capacity += Integer.parseInt( sessions.get(i) ) ;
+												session.capacity +=  sessions.get(i).capacity ;
 										}		
-										city.sessionMap.put( s+"", session );
 
+										city.sessionMap.put(s+"", session );
 										Boolean isPwD = city.isPwdCentreSession.get( session.sessionId );
-
 										if( isPwD == null )
 											isPwD = new Boolean(false);
 										if( session.capacity > 0 && centre.pwdFriendly )
@@ -310,33 +350,6 @@ public class Allocator{
 
 		}
 
-		void readConstraints(String filename){
-
-				if( filename == null || filename.trim().length() == 0)	
-						return;
-
-				BufferedReader br =  null; 
-				try{
-						br = new BufferedReader( new FileReader(new File(filename) ) );	
-						String line = null;	
-						while( ( line =  br.readLine() ) != null ){
-								String[] tk = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-						}	
-
-				}catch(Exception e){
-						e.printStackTrace();	
-				}finally{
-						if( br != null){
-								try{	
-										br.close();
-								}catch(Exception e){
-										e.printStackTrace();	
-								}		
-						}		
-				}	
-
-		}
-
 		void allocate(List<Applicant> applicants, int choiceNumber, boolean onlyFemaleForCity){
 
 				int count = 0;
@@ -344,17 +357,16 @@ public class Allocator{
 
 				for(Applicant applicant: applicants){
 
+						if( applicant.cityAllocated )
+							continue;
+
+						if( notAllocateList.contains( applicant.enrollment ) ){
+							notAllocatedListApplicant.put( applicant.enrollment, applicant );
+							continue;
+						}
 
 						if( onlyFemaleForCity && ( cityChange.get( applicant.choices[ choiceNumber ] ) != null && applicant.gender.equals("Male") ) )	
 							continue;
-
-						if( applicant.paperCode1 != null && applicant.paperCode2 != null ){
-
-							if( applicant.isAllocated.get( applicant.paperCode1 ).booleanValue()  && applicant.isAllocated.get( applicant.paperCode2).booleanValue() )
-										continue;
-						}else if ( applicant.paperCode1 != null && applicant.isAllocated.get( applicant.paperCode1 ).booleanValue() ){
-										continue;
-						}
 
 						String cityCode = applicant.choices[ choiceNumber ];			
 
@@ -371,33 +383,36 @@ public class Allocator{
 								String session2 = paperSessionMap.get( applicant.paperCode2 );
 
 								if( applicant.isPwD  ){
-								   if ( !city.isPwdCentreSession.get( session1 ).booleanValue() || !city.isPwdCentreSession.get( session2 ).booleanValue() )
-										continue;
+								   if ( !city.isPwdCentreSession.get( session1 ).booleanValue() || ! city.isPwdCentreSession.get( session2 ).booleanValue() )
+										   continue;
 								}
+
 								if( ( city.sessionMap.get( session1 ).capacity -  city.sessionMap.get( session1 ).allocated ) > 0 && 
 									( city.sessionMap.get( session2 ).capacity -  city.sessionMap.get( session2 ).allocated ) > 0 ){
 
 										city.sessionMap.get( session1 ).allocated++;
 
 										Paper paper = city.sessionMap.get( session1 ).paperMap.get( applicant.paperCode1 );
+
 										if( paper == null){
-												paper = new Paper( applicant.paperCode1, 0 );
+											paper = new Paper( applicant.paperCode1, 0 );
 										}
 
 										paper.applicants.add( applicant );
 
-										applicant.isAllocated.put( paper.paperCode, new Boolean(true) );	
 										city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
 
 										city.sessionMap.get( session2 ).allocated++;
 
 										paper = city.sessionMap.get( session2 ).paperMap.get( applicant.paperCode2 );
+
 										if( paper == null){
 												paper = new Paper( applicant.paperCode2, 0 );
 										}
+
 										city.sessionMap.get( session2 ).paperMap.put( applicant.paperCode2, paper );	
-										applicant.isAllocated.put( paper.paperCode, new Boolean(true) );	
-										applicant.allotedChoice = ( choiceNumber + 1);
+
+										applicant.allotedChoice = ( choiceNumber + 1 );
 
 										if( applicant.isPwD ){
 												city.sessionMap.get( session1 ).pwdAllocated++;
@@ -405,6 +420,7 @@ public class Allocator{
 												pwdCount++;
 										}
 										count++;
+										applicant.cityAllocated = true;
 								}   				
 						}else if ( applicant.paperCode1 != null && applicant.paperCode2 == null ){
 
@@ -413,24 +429,22 @@ public class Allocator{
 								if( applicant.isPwD && !city.isPwdCentreSession.get( session1 ).booleanValue() )
 									continue;
 
-								if ( (city.sessionMap.get( session1 ).capacity -  city.sessionMap.get( session1 ).allocated ) > 0 ){  // Single Paper
+								if ( ( city.sessionMap.get( session1 ).capacity -  city.sessionMap.get( session1 ).allocated ) > 0 ){  // Single Paper
 
 										city.sessionMap.get( session1 ).allocated++;
 										Paper paper = city.sessionMap.get( session1 ).paperMap.get( applicant.paperCode1 );
 										if( paper == null){
 												paper = new Paper( applicant.paperCode1, 0 );
 										}
-
 										paper.applicants.add( applicant );
 										city.sessionMap.get( session1 ).paperMap.put( applicant.paperCode1, paper );	
-										applicant.isAllocated.put( paper.paperCode, new Boolean(true) );	
 										applicant.allotedChoice = ( choiceNumber + 1);
-
 										if( applicant.isPwD ){
 												city.sessionMap.get( session1 ).pwdAllocated++;
 												pwdCount++;
 										}
 										count++;
+										applicant.cityAllocated = true;
 								}
 						}
 				}	
@@ -439,17 +453,21 @@ public class Allocator{
 		void centreAllocation(){
 
 				Set<String> cityCodes = cityMap.keySet();
+
 				for(String cityCode: cityCodes){
+
 						City city = cityMap.get( cityCode );
 						city.allocate();
 						city.generateRegistrationId();
 				}
 		}
 
-		void print( ){
+		void print( boolean cameraReady ){
 
 				Set<String> zones = zoneMap.keySet();
+
 				Centre.header();
+
 				for(String zoneId: zones){
 						Zone zone = zoneMap.get( zoneId );
 						Set<String> cities = zone.cityMap.keySet();
@@ -459,18 +477,18 @@ public class Allocator{
 						}
 				}
 
-				Applicant.header();
+				Applicant.header( cameraReady );
 				for(Applicant applicant: allocated ){
-						applicant.print();
+						applicant.print( cameraReady );
 				}
 
 				System.out.println("------------------ Not Allocated Candidate ---------------");
-				Applicant.header();
+				Applicant.header( cameraReady );
 
 				for(Applicant applicant: applicants ){
 						if( !allocated.contains( applicant ) ){
 								notAllocated.add( applicant );
-								applicant.print();
+								applicant.print( cameraReady );
 						}	
 				}
 				System.out.println("Not Allocated candidate "+notAllocated.size());
@@ -479,20 +497,28 @@ public class Allocator{
 
 		void cityChangeUpdate(List<Applicant> applicants){
 
+			int count = 0;
+
 			for(Applicant applicant: applicants){
 
-				if( applicant.isAllocated.get( applicant.paperCode1  ).equals("true") ){
+				if( applicant.cityAllocated ){
 					continue;
-				}else {
+
+				}else{
+
 					String newChoice = cityChange.get( applicant.choices[0] );
-					if( newChoice != null )
-						applicant.choices[0] = newChoice;
+
+					if( newChoice != null ){
+						count++;
+						applicant.choices[0] = new String( newChoice );
+					}
 				}
 			}
+			System.err.println("No of city-change updated: "+count );
 		}
 
 		void allocate(){
-			
+
 			allocate( PwDApplicants, 0, false );
 			allocate( twoPaperApplicants, 0, true );
 			allocate( applicants, 0, true );
@@ -506,22 +532,47 @@ public class Allocator{
 			allocate( PwDApplicants, 0, false );
 			allocate( twoPaperApplicants, 0, false );
 			allocate( applicants, 0, false );
-			
+
+
+			/*
+
+			int cityAllocated = 0;
+			int cityNotAllocated = 0;
+
+			for(Applicant  applicant: applicants){
+				if( applicant.cityAllocated )
+					cityAllocated++;	
+				else
+					cityNotAllocated++;
+			}
+
+			System.err.println(cityAllocated+" , "+cityNotAllocated);
+
+			*/
+
 		}
 
 		public static void main(String[] args){
 
 				try{
+						boolean cameraReady = false;
+						int i = 0 ;
+						while( i < args.length ){
+							if( args[i].equals("-cr") )
+								cameraReady = true;
+							i++;
+						}
 
 						Allocator allocator = new Allocator();
 						allocator.readCandidateCityChocieUpdate("./data/candidate-city-change.csv", true );
 						allocator.readCityChange("./data/city-change.csv", true );
-						allocator.readCentres("./data/jam-centre-data.csv", true );
+						//allocator.readCentres("./data/jam-centre-data.csv", true );
+						allocator.readCentres("./data/jam-centre-data-161215.csv", true );
+						allocator.readDuplicate("./data/duplicate.csv", true);
 						allocator.readApplicants("./data/applicant20151126.csv", true );
-						allocator.readConstraints("");
 						allocator.allocate();
 						allocator.centreAllocation();
-						allocator.print();
+						allocator.print( cameraReady );
 
 
 				}catch(Exception e){
