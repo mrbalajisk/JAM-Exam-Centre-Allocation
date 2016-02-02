@@ -8,27 +8,44 @@ import java.util.TreeMap;
 public class Centre{
 
 	String centreCode;
+	String centreName;
 	boolean pwdFriendly;
+
 	Map<String, Session> sessionMap;
 
+	Centre( String centreCode, String centreName, List<Session>sessions, String PwDFriendly ){
 
-	Centre( String centreCode, List<String>sessions, String PwDFriendly ){
+		this.centreName = centreName;
 		this.centreCode = centreCode;
-		if( PwDFriendly.equals("YES") )
-			pwdFriendly = true;
+
+		if( PwDFriendly.equals("YES") || PwDFriendly.equals("Yes") || PwDFriendly.indexOf("Y") >= 0 || PwDFriendly.indexOf("y") >=0 )
+			this.pwdFriendly = true;
 
 		this.sessionMap = new TreeMap<String, Session>();
 		for(int i = 0, s = 1; i < sessions.size(); i++, s++){
-			sessionMap.put( s+"", new Session(s+"", Integer.parseInt( sessions.get(i)  ) ) );
+			sessionMap.put(s+"", sessions.get(i) );
 		}
+	}
+
+	static void header(){
+		System.out.println("Zone, CityCode, Centre-Code, CentreName, Pwd-Friendly, Session1(Capacity|Allocated|PwD), Session2( Capacity|Allocated|PwD) ");
 	}
 	
 	void print(String zone, String cityCode){
 
-		Set<String> sessions = sessionMap.keySet();
-		for(String session: sessions){
-			sessionMap.get( session ).print(zone, cityCode, centreCode );
-			System.out.println();
+		System.out.print( zone+", "+cityCode+", "+centreCode+", '"+centreName+"', "+pwdFriendly);
+		Set<String> sessionIds = sessionMap.keySet();
+		for(String sessionId: sessionIds){
+			Session session = sessionMap.get( sessionId );
+			System.out.print(", ("+session.capacity+"|"+session.allocated+"|"+session.pwdAllocated+")");
+		}
+		System.out.println();
+	}
+
+	void generateRegistrationId(){
+		Set<String> sessionIds = sessionMap.keySet();
+		for(String sessionId: sessionIds){
+			sessionMap.get( sessionId ).generateRegistrationId();
 		}
 	}
 } 
